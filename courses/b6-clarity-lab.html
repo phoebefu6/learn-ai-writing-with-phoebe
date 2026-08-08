@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer session 6 · The clarity lab - learn ai writing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-writing-with-phoebe</a> / Writer session 6 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Writing with Phoebe · Writer track · Session 6 of 10</div>
+    <h1>The clarity lab: <span class="accent">a minute, not a mood</span></h1>
+    <p class="sub">"This feels a bit waffly" cannot be acted on. "Eleven hedges, no numbers in six sentences, and every sentence the same length" can be fixed before your coffee goes cold. This session turns the seven measures into a sixty-second pass you can run by eye on anything - your draft, a model's draft, or a document someone just sent you and asked you to approve. Then we do the hard half: what to actually delete, and why a model is the worst editor you will ever work with unless you constrain it savagely.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Writer track</span>
+      <span class="chip audience">Anyone whose name goes on the writing</span>
+      <span class="chip audience">Signature session</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Where we are</span>
+      <span class="a2" style="flex:4">3-17 · The sixty-second pass</span>
+      <span class="a3" style="flex:5">17-41 · Build-along: diagnose, cut, break it</span>
+      <span class="a4" style="flex:1">41-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where this sits in the track</h2>
+    </div>
+    <p class="lede">b2 gave you the brief, b3 your voice, b4 and b5 the two formats you write most. You can now produce a decent draft on demand, which means the bottleneck has moved to judgement - deciding whether what came back is any good, and fixing it fast. That is this session. Everything here is measurable, which is deliberate: the parts of writing that need taste are better spent on the parts no checklist reaches.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live clarity lab - toggle levers, watch the real score</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The sixty-second pass in running order, the two cuts that do most of the work, an editor prompt that constrains a model into being useful, and the sentence to use when someone hands you 400 fluent words that say nothing.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE PASS ============ -->
+  <section class="section" id="the-pass">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the standard</span>
+      <h2>Seven checks, in this order <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Order matters, because the first two checks often make the rest unnecessary. Start with <strong>the ask</strong> - if you cannot find what the reader is meant to do, stop reading and go back to the writer. Then <strong>specifics</strong>, because a piece with no numbers or names is usually not a draft problem but a thinking problem. Only then work through the surface habits: hedges, passives, rhythm, abstraction, tells. Grade level last, as a sanity check.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The sixty-second pass: seven checks in running order, each with the question to ask and the fix.">
+        <style>
+          .psN { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .psQ { font: 600 12.5px Inter, sans-serif; fill: #24282E; }
+          .psX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .psK { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <rect x="24" y="24" width="34" height="40" rx="7" fill="#7A2E1B"/>
+        <text class="psN" x="35" y="49">1</text>
+        <rect x="70" y="24" width="252" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="41">Can you find the ask?</text>
+        <text class="psX" x="84" y="57">read only the first and last lines</text>
+        <rect x="336" y="24" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="41">If not, stop. This is not an editing problem - nobody decided what</text>
+        <text class="psX" x="350" y="57">the piece was for, and no rewrite fixes that</text>
+
+        <rect x="24" y="72" width="34" height="40" rx="7" fill="#B04A2F"/>
+        <text class="psN" x="35" y="97">2</text>
+        <rect x="70" y="72" width="252" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="89">Are there numbers and names?</text>
+        <text class="psX" x="84" y="105">count sentences carrying either</text>
+        <rect x="336" y="72" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="89">Under half means plausible vagueness. Go and get the facts</text>
+        <text class="psX" x="350" y="105">before touching a single sentence</text>
+
+        <rect x="24" y="120" width="34" height="40" rx="7" fill="#C96A4A"/>
+        <text class="psN" x="35" y="145">3</text>
+        <rect x="70" y="120" width="252" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="137">How many hedges?</text>
+        <text class="psX" x="84" y="153">just, really, somewhat, I think</text>
+        <rect x="336" y="120" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="137">Delete every one you would not say out loud. Keep the ones</text>
+        <text class="psX" x="350" y="153">that are genuine uncertainty, and say so plainly instead</text>
+
+        <rect x="24" y="168" width="34" height="40" rx="7" fill="#B04A2F"/>
+        <text class="psN" x="35" y="193">4</text>
+        <rect x="70" y="168" width="252" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="185">Who is doing the verbs?</text>
+        <text class="psX" x="84" y="201">passive voice hides the actor</text>
+        <rect x="336" y="168" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="185">"A decision was reached" - by whom? Put the person back in,</text>
+        <text class="psX" x="350" y="201">unless the actor genuinely does not matter</text>
+
+        <rect x="24" y="216" width="34" height="40" rx="7" fill="#C96A4A"/>
+        <text class="psN" x="35" y="241">5</text>
+        <rect x="70" y="216" width="252" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="233">Does the rhythm vary?</text>
+        <text class="psX" x="84" y="249">squint at the line lengths</text>
+        <rect x="336" y="216" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="233">A steady hum of 18-to-22-word sentences is the clearest tell</text>
+        <text class="psX" x="350" y="249">of generated prose. Break one in half. Then break another</text>
+
+        <rect x="24" y="264" width="34" height="40" rx="7" fill="#B04A2F"/>
+        <text class="psN" x="35" y="289">6</text>
+        <rect x="70" y="264" width="252" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="281">Abstract nouns and tells?</text>
+        <text class="psX" x="84" y="297">-tion, -ment, leverage, seamless</text>
+        <rect x="336" y="264" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="281">Turn the noun back into a verb: "the implementation of" becomes</text>
+        <text class="psX" x="350" y="297">"we implemented". Tells are fingerprints - swap them for your own</text>
+
+        <rect x="24" y="312" width="34" height="40" rx="7" fill="#33475C"/>
+        <text class="psN" x="35" y="337">7</text>
+        <rect x="70" y="312" width="252" height="40" rx="7" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/>
+        <text class="psQ" x="84" y="329">Reading grade, as a check</text>
+        <text class="psX" x="84" y="345">above 12 usually means unedited</text>
+        <rect x="336" y="312" width="520" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="psX" x="350" y="329">Difficulty is not sophistication. If the grade is high and the</text>
+        <text class="psX" x="350" y="345">subject is simple, you have a cutting job rather than a smart audience</text>
+
+        <rect x="24" y="374" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="psK" x="48" y="386">Checks 1 and 2 send the piece back. Checks 3 to 7 you can fix yourself in ten minutes.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the pass in running order, and what each check tells you to do</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The sentence that sends a draft back<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The hardest part of this is not diagnosis, it is saying it to a colleague without sounding like you are marking homework. The form that works names the absence, not the person:</p>
+        <div class="prompt-box bad">
+          <span class="label">Vague and unactionable</span>
+          <p>"Thanks for this. I think it needs a bit more work - it feels a bit long and I am not quite sure what the takeaway is. Maybe tighten it up?"</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Specific and fixable in twenty minutes</span>
+          <p>"Two things. I cannot find the ask - what do you want the exec team to decide, and by when? And only two of the nine sentences carry a number, so the risks read as feelings rather than facts. Fix those two and I suspect the length problem solves itself."</p>
+        </div>
+        <p>The last clause matters. Most length complaints are really specificity complaints: a piece that says nothing has to keep talking. Once the numbers arrive, the padding has nowhere left to hide.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The two cuts that do most of the work<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>In the lab, "cut" is worth 15 points on its own - the single biggest jump on the ladder - and it is almost entirely two moves:</p>
+        <ul>
+          <li><strong>Delete the closing paragraph.</strong> The one that thanks the reader for their time, restates the opening, and invites questions. It is pure ritual. Anyone who has questions will ask them without being invited, and the reader's last impression should be your ask, not your politeness.</li>
+          <li><strong>Delete the hedges you would not say out loud.</strong> Read the draft aloud. Anywhere you would not have said "somewhat", "arguably" or "I think" in the room, take it out. What is left is the uncertainty you actually have, and that deserves a plain sentence of its own: "we do not know whether X, and here is what would settle it."</li>
+        </ul>
+        <p>The 40% drill: take any draft and remove 40% of the words without removing any information. It sounds impossible and takes about eight minutes. The first time you do it, the piece gets better in a way that is slightly insulting.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Using a model as an editor - and its two biases<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Models are poor editors by default and useful editors under constraint, for a reason worth understanding: they were trained to be helpful, and adding feels helpful. Ask one to "improve" a paragraph and it will usually return a longer paragraph.</p>
+        <div class="prompt-box bad">
+          <span class="label">Invites the failure</span>
+          <p>"Can you improve this and make it more polished?"</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Constrains it into usefulness</span>
+          <p>"Cut this to 60% of its current length. Do not add any new words, ideas or transitions - only delete and rejoin. Keep every number, name and date. Keep my sentence order. Then list separately: every hedge you removed, and any sentence where you think I am hiding an uncertainty rather than stating it."</p>
+        </div>
+        <ul>
+          <li><strong>Bias one: it adds.</strong> Always give a word budget as a hard ceiling, and forbid new content explicitly. "Shorter" is not a constraint; "60% and no new words" is.</li>
+          <li><strong>Bias two: it agrees.</strong> Ask it whether a draft is clear and it will tell you it is clear. Ask it to argue that your reader will misunderstand the ask, and you get something useful.</li>
+          <li><strong>It cannot check your facts.</strong> Editing and verifying are different jobs. The numbers are yours, always.</li>
+          <li><strong>It flattens voice while tidying.</strong> Diff its output against yours rather than accepting wholesale, or three rounds of editing will leave you with prose that could have come from anyone. This is why b3's voice sample matters even at the editing stage.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE RELATIONSHIP ============ -->
+  <section class="section" id="shorter-better">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the shape of the whole course</span>
+      <h2>The score rises as the words fall <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">The ladder is not just six increasing numbers. It is two lines moving in opposite directions - and once you have seen it, "can you make this longer" stops sounding like a reasonable request.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Across the six rungs of the ladder the clarity score rises from 48 to 98 while the word count falls from 223 to 102.">
+        <style>
+          .chA { font: 600 11px Inter, sans-serif; fill: #6B7480; }
+          .chS { font: 700 12px Inter, sans-serif; fill: #B04A2F; }
+          .chW { font: 700 12px Inter, sans-serif; fill: #33475C; }
+          .chL { font: 600 11px Inter, sans-serif; fill: #24282E; }
+          .chK { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <line x1="90" y1="40" x2="90" y2="230" stroke="#CBD1D8" stroke-width="1.5"/>
+        <line x1="90" y1="230" x2="840" y2="230" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="chA" x="24" y="46">100</text>
+        <text class="chA" x="30" y="234">0</text>
+
+        <!-- score line: 48 52 68 70 83 98 mapped y = 230 - v*1.9 -->
+        <polyline points="150,139 288,131 426,101 564,97 702,72 840,44" fill="none" stroke="#B04A2F" stroke-width="3"/>
+        <circle cx="150" cy="139" r="5" fill="#B04A2F"/><circle cx="288" cy="131" r="5" fill="#B04A2F"/>
+        <circle cx="426" cy="101" r="5" fill="#B04A2F"/><circle cx="564" cy="97" r="5" fill="#B04A2F"/>
+        <circle cx="702" cy="72" r="5" fill="#B04A2F"/><circle cx="840" cy="44" r="6" fill="#B04A2F"/>
+        <text class="chS" x="134" y="130">48</text><text class="chS" x="272" y="122">52</text>
+        <text class="chS" x="410" y="92">68</text><text class="chS" x="548" y="88">70</text>
+        <text class="chS" x="686" y="63">83</text><text class="chS" x="820" y="35">98</text>
+
+        <!-- words line: 223 184 171 164 156 102 mapped y = 230 - v*0.62 -->
+        <polyline points="150,92 288,116 426,124 564,128 702,133 840,167" fill="none" stroke="#33475C" stroke-width="3" stroke-dasharray="6 4"/>
+        <circle cx="150" cy="92" r="5" fill="#33475C"/><circle cx="288" cy="116" r="5" fill="#33475C"/>
+        <circle cx="426" cy="124" r="5" fill="#33475C"/><circle cx="564" cy="128" r="5" fill="#33475C"/>
+        <circle cx="702" cy="133" r="5" fill="#33475C"/><circle cx="840" cy="167" r="6" fill="#33475C"/>
+        <text class="chW" x="128" y="84">223w</text><text class="chW" x="818" y="186">102w</text>
+
+        <text class="chL" x="126" y="250">no levers</text>
+        <text class="chL" x="268" y="250">+ brief</text>
+        <text class="chL" x="402" y="250">+ voice</text>
+        <text class="chL" x="536" y="250">+ structure</text>
+        <text class="chL" x="676" y="250">+ specifics</text>
+        <text class="chL" x="812" y="250">+ cut</text>
+
+        <rect x="90" y="268" width="14" height="14" rx="3" fill="#B04A2F"/>
+        <text class="chK" x="114" y="280">Clarity score - up 50 points across five practices</text>
+        <rect x="480" y="268" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="chK" x="504" y="280">Word count - down 121 words over the same path</text>
+        <rect x="90" y="300" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="chK" x="114" y="312">Nothing was removed from the message. Only the words that were not carrying it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - two lines going opposite ways, which is the whole argument</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Reading a document you did not write<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The same pass works when the writing arrives in your inbox for approval. Two adjustments:</p>
+        <ul>
+          <li><strong>Do not ask whether AI wrote it.</strong> You cannot reliably tell, the question puts people on the defensive, and it is the wrong question anyway - a human can write fluent emptiness perfectly well without help. Ask whether it says something checkable.</li>
+          <li><strong>Ask for the brief, not the process.</strong> "Who is this for and what do you want them to do?" gets you a better second draft than any comment on the first one. If the answer is vague, the draft was always going to be.</li>
+        </ul>
+        <p>Leader session a2 goes at this properly, including what to do when the writing is fine and the thinking underneath it is not.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Work backwards from good <span class="tag demo">★ 13 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">Start at <strong>98</strong>, with all five practices in place, and take them away one at a time. Working backwards teaches faster than climbing, because you feel what each habit was buying you rather than watching a number rise for reasons you have not yet internalised.</p>
+
+    <div class="steps">
+      <div class="step"><p>Read the 98-point draft out loud. 102 words, eight sentences, one ask. Note how much of its quality is subtraction rather than skill.</p></div>
+      <div class="step"><p>Turn <strong>Cut</strong> off. Watch the closing ritual paragraph reappear and the hedges creep back into three sentences. 15 points gone.</p></div>
+      <div class="step"><p>Turn <strong>Specifics</strong> off. Every number becomes "a fair amount", "considerably longer", "some early research". This is the most dangerous state a draft can be in, because it still reads fine.</p></div>
+      <div class="step"><p>Turn <strong>Voice sample</strong> off. The corporate register arrives and brings passives with it. Read the difference aloud - this is the rung people underestimate most.</p></div>
+      <div class="step"><p>Turn everything off, then press <strong>Sound more professional</strong> on top. This is the document that lands in inboxes every day.</p></div>
+    </div>
+
+    <div class="wlbox" data-mode="lab" data-levers="brief,voice,structure,specifics,cut"></div>
+
+    <div class="callout tip">
+      <strong>What is written and what is measured</strong>
+      The drafts are written examples - one good version, plus one specific kind of damage per missing practice. Every number is computed from the text above it: hedge and tell counts against real word lists, passive hits by pattern, sentence-length spread, nominalisation density, a real Flesch-Kincaid grade with syllable counting, and the share of sentences carrying a number or a name. The passive check is a heuristic, so read its count as a flag rather than a census.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Your own writing, same seven measures <span class="tag demo">★ 9 min · explore</span></h2>
+    </div>
+    <p class="lede">The ladder is the demonstration. This box is the tool you keep. Paste something you actually sent - and go in expecting a number lower than you would like, because everyone's is. The useful part is not the score, it is the hedge list: seeing your own crutch words counted is a permanent change in how you write.</p>
+
+    <div class="wlbox" data-mode="ladder"></div>
+
+    <div class="wlbox" data-mode="own"></div>
+
+    <div class="steps">
+      <div class="step"><p>Paste an email you sent this week. Read the hedge row first, then the specifics row. Ignore the total for now.</p></div>
+      <div class="step"><p>Delete 40% of the words in the box, in place, without losing information. Watch the score while you do it.</p></div>
+      <div class="step"><p>Now paste a paragraph a model drafted for you and compare the shape of the failures. Yours will be hedges; its will be rhythm and abstraction.</p></div>
+      <div class="step"><p>Write down your three most-used hedges. That is your personal edit list for the rest of the course.</p></div>
+    </div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The measure that changes behaviour fastest is specifics, not hedges.</strong> Hedging is a habit and habits are stubborn. But "only two of nine sentences carry a number" is not a habit, it is a signal that you have not yet done the work the writing was supposed to report. Most of the time, fixing that means going and finding something out - and the draft then writes itself in half the words. That is why check 2 in the pass sends the piece back rather than into an edit: no amount of editing can add a fact that nobody looked up.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-40 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the sixty-second pass by eye on five things in your sent folder, then check yourself against the lab. Record where your eye was wrong - most people underestimate their own hedging and overestimate their specificity.</li>
+      <li>Do the 40% drill on one real draft. Time it. Keep both versions so you can show someone the difference.</li>
+      <li>Use the constrained editor prompt on a paragraph you like, then diff its output against yours and mark every place it flattened your voice.</li>
+      <li>Write the send-it-back sentence for a document you actually received recently, using the two-things form from Part 1. You do not have to send it - the point is being able to name the absence.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This session teaches the working core of the plain-language and editing tradition, made measurable. The readability formula is the published Flesch-Kincaid grade-level calculation, implemented in the lab rather than described. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The seven measures as a sixty-second pass, in running order</span><span class="note">Part 1 · computed live in both labs</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Flesch-Kincaid grade level, calculated with real syllable counting</span><span class="note">Check 7 · treated as a sanity check, not a target</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The two cuts, the 40% drill, and the send-it-back sentence</span><span class="note">Part 1 · reused in b7 editing and b10's capstone</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Plain-language principles - point first, active voice, concrete nouns</span><span class="note">Named as the tradition behind the measures · applied across b4, b5, b7</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Constrained editing with a model, and its add-and-agree biases</span><span class="note">Prompt provided · the full editing craft is b7</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Checks 1 and 2 of the pass are treated differently from the rest. Why?</p>
+      <button class="qopt" type="button">A · They are quicker to run than the surface checks</button>
+      <button class="qopt" type="button">B · A missing ask or missing facts cannot be edited in - the piece has to go back</button>
+      <button class="qopt" type="button">C · They matter less, so you can skip them under time pressure</button>
+      <p class="qwhy">Hedges, passives and rhythm are all fixable by you in ten minutes. A missing ask means nobody decided what the writing was for, and missing numbers mean the underlying work is not done. Editing cannot supply either, which is why those two send the draft back.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · You ask a model to "improve" a paragraph. What is the most likely outcome?</p>
+      <button class="qopt" type="button">A · A longer paragraph - it was trained to be helpful, and adding feels helpful</button>
+      <button class="qopt" type="button">B · A much shorter paragraph with the hedges stripped</button>
+      <button class="qopt" type="button">C · A faithful copy with only grammar corrected</button>
+      <p class="qwhy">Unconstrained editing requests reliably grow the text. Give a hard ceiling, forbid new content explicitly ("cut to 60%, delete and rejoin only, no new words or transitions"), and ask it to list what it removed so you can put back anything that was load-bearing.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">3 · Across the ladder the score climbs 48 to 98. What happens to the word count?</p>
+      <button class="qopt" type="button">A · It rises, because specifics add words</button>
+      <button class="qopt" type="button">B · It stays about the same as words are traded for better ones</button>
+      <button class="qopt" type="button">C · It falls from 223 to 102 - the score rises as the words fall</button>
+      <p class="qwhy">Nothing was removed from the message, only the words that were not carrying it. The specifics rung does add words, and the cut rung removes far more than it costs. That inverse relationship is the argument of the whole course, which is why "can you make this longer" should always be met with a question.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Writer session 6 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The pass, in order</b><span>Ask → specifics → hedges → passives → rhythm → abstraction and tells → grade. First two send it back.</span></div>
+      <div class="cheat-item"><b>Send-it-back sentence</b><span>"Two things: I cannot find the ask, and only two of nine sentences carry a number. Fix those and the length solves itself."</span></div>
+      <div class="cheat-item"><b>The two cuts</b><span>Delete the closing ritual paragraph. Delete every hedge you would not say out loud. Worth 15 points on its own.</span></div>
+      <div class="cheat-item"><b>The 40% drill</b><span>Remove 40% of the words, keep all the information. Eight minutes, and slightly insulting how much better it gets.</span></div>
+      <div class="cheat-item"><b>Editor prompt</b><span>"Cut to 60%. Delete and rejoin only, no new words. Keep every number and name. List the hedges you removed."</span></div>
+      <div class="cheat-item"><b>Two model biases</b><span>It adds when asked to improve, and it agrees when asked if something is clear. Constrain both explicitly.</span></div>
+      <div class="cheat-item"><b>Score up, words down</b><span>48 → 98 while 223 → 102 words. Nothing left the message; only the words not carrying it.</span></div>
+      <div class="cheat-item"><b>Do not ask "was this AI"</b><span>You cannot tell, it puts people on the defensive, and humans write fluent emptiness unaided. Ask if it says something checkable.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Writer session 6 of 10 · learn-ai-writing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b5-updates-and-memos.html">← Previous: Updates, reports, decision memos</a> &nbsp;·&nbsp; <a href="b7-editing.html">Next: Editing - cut, restructure, kill the hedges →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/write-live.js?v=1"></script>
+<script src="../assets/app.js?v=2"></script>
+</body>
+</html>

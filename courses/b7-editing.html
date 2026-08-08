@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer session 7 · Editing: cut, restructure, kill the hedges - learn ai writing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-writing-with-phoebe</a> / Writer session 7 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Writing with Phoebe · Writer track · Session 7 of 10</div>
+    <h1>Editing: cut, restructure, <span class="accent">kill the hedges</span></h1>
+    <p class="sub">This is the session most people need most, so it is the most practical page in the track: a procedure, not an idea. You take a draft, remove 40% of the words, and remove no information. There is an order that works, and following it means you almost never have to rewrite. In the lab, <strong>cut alone is worth +15 points</strong> - the biggest single jump on the ladder alongside voice, and the one nobody delegates well, because a model was trained to be helpful and adding feels helpful. Tonight you do the drill on a real draft, then on your own.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Writer track</span>
+      <span class="chip audience">Anyone whose name goes on the writing</span>
+      <span class="chip audience">Rung 5, the big one</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Where we are</span>
+      <span class="a2" style="flex:4">3-18 · The drill, then restructuring</span>
+      <span class="a3" style="flex:5">18-41 · Build-along: cut it live</span>
+      <span class="a4" style="flex:1">41-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where this sits in the track</h2>
+    </div>
+    <p class="lede">b6 gave you the diagnosis: seven checks you can run by eye in a minute, and the two cuts that do most of the work. This session is the treatment, and it is deliberately mechanical. Editing has a reputation as the taste-heavy part of writing, which is only true of the last 10%. The first 90% is a set of moves you can learn in one evening and run for the rest of your career, in a fixed order, without any judgement about what the piece should sound like. Get through that 90% first and you will find you have far more room left for the judgement.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live clarity lab - toggle levers, watch the real score</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The 40% drill as an ordered six-pass procedure, four restructuring moves that beat any amount of sentence-level work, the test that tells you which of the two you need, a cut prompt that constrains a model into being useful, and the reason you diff its output rather than accept it.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE DRILL ============ -->
+  <section class="section" id="the-drill">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the procedure</span>
+      <h2>The 40% drill, in the order that works <span class="tag concept">9 min live</span></h2>
+    </div>
+    <p class="lede">Take any draft. Remove 40% of the words. Remove no information. Most people hear that and reach for the sentences they like least, which is why the drill fails for them - they start rewriting on pass one and spend twenty minutes polishing prose that was always going to be deleted. The order below exists to stop that. Every pass is a <strong>deletion</strong> except the last one, and by the time you reach the last one there is usually nothing left to rewrite. In the lab this whole procedure is one lever, and that lever is worth <strong>+15 points</strong>: the same size as the voice sample, from work that requires no writing skill at all.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 382" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The 40% drill as six ordered passes: delete the closing ritual, delete spoken-aloud hedges, turn nouns back into verbs, collapse restatements, cut emotional adverbs, and only then rewrite.">
+        <style>
+          .drN { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .drQ { font: 600 12.5px Inter, sans-serif; fill: #24282E; }
+          .drX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .drV { font: 700 13px Inter, sans-serif; fill: #7A2E1B; }
+          .drH { font: 700 10px Inter, sans-serif; fill: #6B7480; letter-spacing: .6px; }
+          .drK { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <text class="drH" x="24" y="16">PASS</text>
+        <text class="drH" x="70" y="16">WHAT YOU DELETE</text>
+        <text class="drH" x="332" y="16">TYPICAL</text>
+        <text class="drH" x="464" y="16">WHY IT COMES HERE</text>
+
+        <rect x="24" y="28" width="34" height="40" rx="7" fill="#7A2E1B"/><text class="drN" x="35" y="53">1</text>
+        <rect x="70" y="28" width="250" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="drQ" x="84" y="45">Delete the closing paragraph</text><text class="drX" x="84" y="61">pure ritual, delete it whole</text>
+        <rect x="332" y="28" width="118" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drV" x="346" y="45">-15%</text><text class="drX" x="346" y="61">typical</text>
+        <rect x="464" y="28" width="392" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drX" x="478" y="45">The reader's last impression should be your ask,</text><text class="drX" x="478" y="61">not your politeness. Nobody needs an invitation.</text>
+
+        <rect x="24" y="76" width="34" height="40" rx="7" fill="#B04A2F"/><text class="drN" x="35" y="101">2</text>
+        <rect x="70" y="76" width="250" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="drQ" x="84" y="93">Delete the spoken-aloud test</text><text class="drX" x="84" y="109">hedges you would not say</text>
+        <rect x="332" y="76" width="118" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drV" x="346" y="93">-6%</text><text class="drX" x="346" y="109">typical</text>
+        <rect x="464" y="76" width="392" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drX" x="478" y="93">Read it aloud. What is left is real uncertainty,</text><text class="drX" x="478" y="109">and that deserves a plain sentence of its own.</text>
+
+        <rect x="24" y="124" width="34" height="40" rx="7" fill="#C96A4A"/><text class="drN" x="35" y="149">3</text>
+        <rect x="70" y="124" width="250" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="drQ" x="84" y="141">Nouns back into verbs</text><text class="drX" x="84" y="157">-tion and -ment, undone</text>
+        <rect x="332" y="124" width="118" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drV" x="346" y="141">-8%</text><text class="drX" x="346" y="157">typical</text>
+        <rect x="464" y="124" width="392" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drX" x="478" y="141">"The implementation of the change" becomes "we</text><text class="drX" x="478" y="157">changed". Three words doing the work of six.</text>
+
+        <rect x="24" y="172" width="34" height="40" rx="7" fill="#B04A2F"/><text class="drN" x="35" y="197">4</text>
+        <rect x="70" y="172" width="250" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="drQ" x="84" y="189">Collapse the restatements</text><text class="drX" x="84" y="205">two sentences, one point</text>
+        <rect x="332" y="172" width="118" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drV" x="346" y="189">-10%</text><text class="drX" x="346" y="205">typical</text>
+        <rect x="464" y="172" width="392" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drX" x="478" y="189">Two sentences making one point at different</text><text class="drX" x="478" y="205">volumes: keep the quieter one, delete the other.</text>
+
+        <rect x="24" y="220" width="34" height="40" rx="7" fill="#C96A4A"/><text class="drN" x="35" y="245">5</text>
+        <rect x="70" y="220" width="250" height="40" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="drQ" x="84" y="237">Cut the emotional adverbs</text><text class="drX" x="84" y="253">keep the factual ones</text>
+        <rect x="332" y="220" width="118" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drV" x="346" y="237">-3%</text><text class="drX" x="346" y="253">typical</text>
+        <rect x="464" y="220" width="392" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drX" x="478" y="237">Adverbs doing feeling-work go. Adverbs doing</text><text class="drX" x="478" y="253">fact-work stay: "twice weekly" is a fact.</text>
+
+        <rect x="24" y="268" width="34" height="40" rx="7" fill="#33475C"/><text class="drN" x="35" y="293">6</text>
+        <rect x="70" y="268" width="250" height="40" rx="7" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="drQ" x="84" y="285">Only now rewrite anything</text><text class="drX" x="84" y="301">the last pass, never first</text>
+        <rect x="332" y="268" width="118" height="40" rx="7" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="drV" x="346" y="285">0%</text><text class="drX" x="346" y="301">by design</text>
+        <rect x="464" y="268" width="392" height="40" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="drX" x="478" y="285">Rewrite last. Rewriting first means polishing</text><text class="drX" x="478" y="301">sentences you were about to delete anyway.</text>
+
+        <rect x="24" y="326" width="14" height="14" rx="3" fill="#33475C"/><text class="drK" x="48" y="338">The percentages are typical for a first pass, not measured. Your draft will not split evenly.</text>
+        <rect x="24" y="350" width="14" height="14" rx="3" fill="#33475C"/><text class="drK" x="48" y="362">Five deletion passes, one rewrite pass. In the lab, this lever alone is worth +15 points.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - six passes in order, and why the rewrite comes last</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Pass by pass, with the actual moves<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Run these in order on a real draft. Do not skip ahead, and do not tidy as you go:</p>
+        <ul>
+          <li><strong>1 - the closing ritual paragraph.</strong> The one that thanks the reader for their time, restates the opening and invites questions. Delete the whole block, not parts of it. It is the single largest chunk you will remove and it takes four seconds.</li>
+          <li><strong>2 - the hedges you would not say out loud.</strong> Read the draft aloud. Anywhere you would not have said "somewhat", "arguably", "I think", "a number of" in the room, take it out. The ones that survive are your genuine uncertainty, and those get promoted into a plain sentence: "we do not know whether X, and here is what would settle it."</li>
+          <li><strong>3 - nominalisations back into verbs.</strong> "The implementation of the change" becomes "we changed". "There was a delay in the delivery" becomes "we delivered late". Watch what comes back with the verb: a person. That is the real win, not the word count.</li>
+          <li><strong>4 - collapse the restatements.</strong> Look for any two sentences saying the same thing at different volumes, which generated prose produces constantly. Keep the quieter one. It is almost always the more specific of the two.</li>
+          <li><strong>5 - adverbs doing emotional work.</strong> "Significantly", "extremely", "unfortunately", "really" are volume knobs. Delete them. Adverbs carrying fact - "twice weekly", "internally", "manually" - stay, because deleting those loses information.</li>
+          <li><strong>6 - only now, rewrite.</strong> Read what is left. Usually two or three sentences need joining and one needs a new opening clause. If you find yourself rewriting more than that, you do not have an editing job - see Part 2.</li>
+        </ul>
+        <p>Eight minutes, start to finish, on a page of prose. The first time you do it the piece gets better in a way that is slightly insulting.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why the order matters more than the moves<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every move on that list is obvious. The order is the part that is worth teaching, for three reasons:</p>
+        <ul>
+          <li><strong>Deleting whole blocks first makes the later passes smaller.</strong> The closing paragraph is usually where a third of the hedges live. Kill it on pass one and pass two has less to do.</li>
+          <li><strong>Deletion is reversible in a way rewriting is not.</strong> You can paste a deleted sentence back. You cannot un-rewrite a paragraph once you have lost the version you started with, and rewritten prose tends to drift towards a flatter register - yours or a model's.</li>
+          <li><strong>Rewriting early hides the real problem.</strong> If a paragraph will not come out right after two attempts, the trouble is nearly always structural, and polishing it is a way of avoiding that. Deleting first exposes the structure fast, because a piece with the padding gone has nowhere to hide its shape.</li>
+        </ul>
+        <p>The one-sentence version: <strong>delete before you decide, decide before you write.</strong></p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The hedges that earn their place<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Pass two is the one people overrun. Deleting every hedge produces a draft that sounds more certain than you are, which is a worse failure than waffling because it is dishonest rather than merely slow. Three that stay:</p>
+        <ul>
+          <li><strong>A real confidence level.</strong> "The 14 March date is firm; the September rollout is a guess" is not hedging, it is information. Keep it and make it sharper.</li>
+          <li><strong>A stated limit on what you checked.</strong> "This is from two schools, not all six" belongs in the draft. Deleting it makes the piece score better and makes you less trustworthy.</li>
+          <li><strong>Genuine deference where the decision is not yours.</strong> "If you would rather hold this until Q4, say so and I will replan" is a real sentence with a real ask in it.</li>
+        </ul>
+        <p>The test is not whether a word appears on a hedge list. It is whether the hedge is carrying information about your confidence, or covering the fact that you did not want to commit. The first is honesty. The second is what the drill is for.</p>
+      </div>
+    </details>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 424" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One paragraph before and after the 40% drill, with each deleted sentence colour-coded as ritual, hedge, nominalisation or restatement.">
+        <style>
+          .baT { font: 700 11px Inter, sans-serif; fill: #6B7480; letter-spacing: .6px; }
+          .baD { font: 600 11px Inter, sans-serif; fill: #24282E; }
+          .baW { font: 600 11px Inter, sans-serif; fill: #FFFFFF; }
+          .baL { font: 400 12px Inter, sans-serif; fill: #6B7480; }
+          .baK { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <text class="baT" x="24" y="42">BEFORE - 9 SENTENCES, 132 WORDS</text>
+        <text class="baT" x="456" y="42">AFTER - 5 SENTENCES, 79 WORDS</text>
+
+        <rect x="24" y="56" width="340" height="26" rx="5" fill="#E8B5A2"/><text class="baD" x="34" y="73">Quick update ahead of Thursday</text>
+        <rect x="24" y="88" width="300" height="26" rx="5" fill="#33475C"/><text class="baW" x="34" y="105">Proposal slips to 14 March</text>
+        <rect x="24" y="120" width="380" height="26" rx="5" fill="#C96A4A"/><text class="baW" x="34" y="137">I think this is somewhat concerning</text>
+        <rect x="24" y="152" width="400" height="26" rx="5" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="baD" x="34" y="169">The implementation of the change was</text>
+        <rect x="24" y="184" width="290" height="26" rx="5" fill="#33475C"/><text class="baW" x="34" y="201">Two of three schools moved</text>
+        <rect x="24" y="216" width="330" height="26" rx="5" fill="#CBD1D8"/><text class="baD" x="34" y="233">In other words, the date moved</text>
+        <rect x="24" y="248" width="260" height="26" rx="5" fill="#33475C"/><text class="baW" x="34" y="265">I need a decision Thursday</text>
+        <rect x="24" y="280" width="360" height="26" rx="5" fill="#C96A4A"/><text class="baW" x="34" y="297">It would be great if you confirmed</text>
+        <rect x="24" y="312" width="400" height="26" rx="5" fill="#E8B5A2"/><text class="baD" x="34" y="329">Thanks so much, do reach out any time</text>
+
+        <rect x="456" y="56" width="300" height="26" rx="5" fill="#33475C"/><text class="baW" x="466" y="73">Proposal slips to 14 March</text>
+        <rect x="456" y="88" width="340" height="26" rx="5" fill="#B04A2F"/><text class="baW" x="466" y="105">We changed the pilot scope Monday</text>
+        <rect x="456" y="120" width="290" height="26" rx="5" fill="#33475C"/><text class="baW" x="466" y="137">Two of three schools moved</text>
+        <rect x="456" y="152" width="260" height="26" rx="5" fill="#33475C"/><text class="baW" x="466" y="169">I need a decision Thursday</text>
+        <rect x="456" y="184" width="380" height="26" rx="5" fill="#B04A2F"/><text class="baW" x="466" y="201">The September date is still a guess</text>
+
+        <rect x="456" y="230" width="380" height="80" rx="8" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="baD" x="472" y="252">Two sentences were rewritten, not cut:</text>
+        <text class="baL" x="472" y="272">the nominalisation became a verb, and one</text>
+        <text class="baL" x="472" y="290">surviving hedge was promoted into a plain</text>
+        <text class="baL" x="472" y="304">statement of what is not yet known.</text>
+
+        <rect x="24" y="356" width="14" height="14" rx="3" fill="#E8B5A2"/><text class="baL" x="46" y="368">Ritual - opening and closing</text>
+        <rect x="320" y="356" width="14" height="14" rx="3" fill="#C96A4A"/><text class="baL" x="342" y="368">Hedge you would not say aloud</text>
+        <rect x="600" y="356" width="14" height="14" rx="3" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="baL" x="622" y="368">Nominalisation, undone</text>
+        <rect x="24" y="380" width="14" height="14" rx="3" fill="#CBD1D8"/><text class="baL" x="46" y="392">Restatement at lower volume</text>
+        <rect x="320" y="380" width="14" height="14" rx="3" fill="#33475C"/><text class="baL" x="342" y="392">Kept exactly as written</text>
+        <rect x="600" y="380" width="14" height="14" rx="3" fill="#B04A2F"/><text class="baL" x="622" y="392">Rewritten on pass six</text>
+        <rect x="24" y="404" width="14" height="14" rx="3" fill="#33475C"/><text class="baK" x="48" y="416">132 words down to 79, and nothing the reader needed left the paragraph.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one paragraph through the drill, deletions coded by type</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ PART 2: RESTRUCTURING ============ -->
+  <section class="section" id="restructure">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the bigger move</span>
+      <h2>Restructuring without rewriting from zero <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Sometimes the drill finishes and the piece is shorter and still wrong. That is a structure problem, and the temptation is to start again from a blank page - which throws away every fact you already gathered and usually produces a draft with the same shape as the first one. You almost never need to start again. You need to move three or four blocks and promote one sentence. The moves below are cheap, and the last card is the test that tells you which kind of job you are on.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Move the last paragraph to the top<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>This is right far more often than it has any business being. Writers think their way to the point and then stop, so the conclusion arrives after the reasoning that produced it. The reader wants the opposite order.</p>
+        <p>Try it mechanically: cut the final paragraph, paste it at the top, and read the piece again. Three things usually happen at once. The old opening turns out to be a windup you can delete entirely. The middle sections stop needing their linking sentences, because the reader already knows where this is going. And the ask becomes findable in the first four seconds, which is the only reading window most of your documents actually get.</p>
+        <p>If moving it makes the piece worse, that is useful too - it means the ending was a summary rather than a conclusion, and summaries do belong at the end.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Find the sentence that is actually your point, and promote it<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>In most drafts there is one sentence doing the real work, and it is buried in the third paragraph with a hedge in front of it. It often starts with "so really the question is", or "what this means is", or "to be honest".</p>
+        <p>Find it. Delete the run-up phrase. Put it first. Then read every other paragraph and ask what it is doing for that sentence - supporting it, qualifying it, or nothing. The paragraphs doing nothing are the ones you have been unable to cut because they were "background", and once the point is visible at the top their pointlessness is obvious.</p>
+        <p>This move is why the drill puts rewriting last. If you had rewritten paragraph three, you would have smoothed the very sentence you were looking for into something more polite and less findable.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Cut it in half by choosing one audience<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A document that will not come under control is often two documents. At Cadence this week, the education note is trying to be a decision memo for the exec team and a delivery briefing for the engineers at the same time, so every section carries both a "what this means for the number" paragraph and a "how we would build it" paragraph. Neither reader needs the other half, and both of them stop reading.</p>
+        <p>Decide which one it is for. Delete the other reader's half entirely rather than trimming it - trimming leaves stubs that read like unfinished thoughts. If the second audience genuinely needs something, they get their own short document, which will take you eight minutes because you already wrote it.</p>
+        <p>Two clean documents beat one that serves nobody, and the total word count usually still falls.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The test: can you write the one-line summary?<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Before you spend twenty minutes editing sentences, try to write one line that says what the piece is and what you want. Not a title. A sentence with a subject, a verb and an ask: "the education proposal slips to 14 March because two of three schools moved their budget cycle, and I need a go or no-go on the reduced scope by Thursday."</p>
+        <ul>
+          <li><strong>If the line comes out easily,</strong> you have an editing job. Run the drill, move the point to the top, ship it.</li>
+          <li><strong>If the line needs two clauses joined by "and also",</strong> you have two documents. Use the audience split.</li>
+          <li><strong>If you cannot write the line at all,</strong> no sentence-level work will save the piece. Nobody decided what it was for, and that is a thinking problem wearing a writing problem's clothes. Go back to the brief from b2 - reader, decision, ask, facts, register - and fill in the slot that is empty. That is usually the ask.</li>
+        </ul>
+        <p>This is the same failure as check 1 in b6's sixty-second pass, seen from the writer's side rather than the reviewer's. Both of them exist to stop you editing a document that should not exist yet.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: EDITING WITH A MODEL ============ -->
+  <section class="section" id="model-editing">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the tool, constrained</span>
+      <h2>Editing with a model, under constraint <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">A model is a poor editor by default and a genuinely useful one under constraint, and it is worth understanding exactly why rather than treating it as a quirk. Two biases do all the damage. <strong>It adds when asked to improve</strong>, because it was trained to be helpful and adding feels helpful - ask for a better paragraph and you get a longer one. <strong>It agrees when asked whether something is clear</strong>, because agreement is the helpful-sounding answer, so "is this clear?" returns "yes, this is clear and well structured" on almost anything. Neither is a bug you can prompt away. Both are things you design around.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Bias one: it adds. So make the ceiling the instruction<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>"Shorter" is not a constraint. A number, plus a ban on new material, is:</p>
+        <div class="prompt-box bad">
+          <span class="label">Invites the failure</span>
+          <p>"Can you improve this and make it tighter and more polished?"</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Constrains it into usefulness</span>
+          <p>"Cut this to 60% of its current length. Delete and rejoin only - do not add any new words, ideas or transitions. Keep every number, name and date. Keep my sentence order. Then list separately: every hedge you removed, and any sentence where you think I am hiding an uncertainty rather than stating it."</p>
+        </div>
+        <p>Each clause is doing a specific job. "60%" is a hard ceiling it can be held to. "Delete and rejoin only" blocks the smoothing transitions it would otherwise invent. "Keep every number, name and date" stops the specifics being generalised away, which is the most expensive thing an editing pass can do to you. "Keep my sentence order" keeps the diff readable. And the two lists at the end are the actually valuable output: the hedge list is a record of your own habits, and the hiding-an-uncertainty list is the closest a model gets to useful criticism.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Bias two: it agrees. So never ask it whether the writing is good<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Change the question from a verdict to an argument, and give it a side to argue:</p>
+        <div class="prompt-box bad">
+          <span class="label">Guaranteed to be reassuring and useless</span>
+          <p>"Is this clear? Does the ask come across?"</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Forces something you can act on</span>
+          <p>"Argue that my reader will misunderstand the ask. Quote the exact sentence they will misread, say what they will think I am asking for, and name what they will do instead of what I want."</p>
+        </div>
+        <p>The pattern generalises. Never ask "is this good", ask it to make the case against. "List every fact in here a reader could challenge and what they would ask for." "Read this as the person whose project I am delaying." You are not getting judgement out of it, you are getting coverage - a list of the objections you would otherwise discover in the meeting.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>It flattens your voice while tidying, so diff rather than accept<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Even a well-constrained cut comes back slightly less like you. Editing touches exactly the features that make prose recognisable: the odd sentence length, the plain word where a formal one was available, the joke you nearly took out yourself. Accept three rounds of that wholesale and you have prose that could have come from anyone, which is a slow loss you will not notice happening.</p>
+        <ul>
+          <li><strong>Read the diff, not the output.</strong> Paste both versions side by side and go line by line. Take the deletions you agree with and refuse the substitutions.</li>
+          <li><strong>Give it your voice sample anyway.</strong> This is why b3 matters at the editing stage and not just the drafting stage: the same three paragraphs of your own writing, handed over with "match this register", keep a cut from drifting corporate.</li>
+          <li><strong>Watch for the reinstated hedge.</strong> A model that is asked to cut will sometimes hedge what remains, because a shorter sentence sounds blunter to it. That is the anti-lever in miniature: from a finished draft, "sound more professional" costs <strong>36 points</strong> and adds <strong>42 words</strong>, and every substitution it makes is a hedge, a passive or an abstract noun.</li>
+          <li><strong>It cannot check your facts.</strong> Editing and verifying are different jobs. The numbers are yours, always, and a model will happily preserve a wrong one beautifully.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Turn Cut on, then do it to your own draft <span class="tag demo">★ 20 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">The first box starts at <strong>83</strong>, with brief, voice, structure and specifics already in place. This is a genuinely decent draft: briefed, in a human register, with real numbers in it. Everything left to gain is deletion. Turn <strong>Cut</strong> on and it goes to <strong>98</strong> while the word count falls from <strong>156 to 102</strong> - that is the whole of tonight's session, computed in front of you.</p>
+
+    <div class="steps">
+      <div class="step"><p>Read the 83-point draft first and find the closing paragraph, the two hedges and the restatement by eye. Predict which rows will move before you click anything.</p></div>
+      <div class="step"><p>Turn <strong>Cut</strong> on. Score 83 to <strong>98</strong>, words 156 to 102. Check your predictions: the hedge row and the rhythm row move most, because deleting a ritual paragraph and two hedges also breaks up the steady sentence length.</p></div>
+      <div class="step"><p>Note what does <em>not</em> move. Specifics stay high, because the drill removed no information - that is the whole claim of the 40% drill, visible as a row that holds steady while the total climbs 15 points.</p></div>
+      <div class="step"><p>Now the second box. Paste something you actually sent this week and run the six passes <em>in the box</em>, in order, watching the score after each pass. Closing paragraph first. Do not rewrite until pass six.</p></div>
+      <div class="step"><p>Record two numbers: the score before, and the word count before and after. If you did not lose at least 30% of the words, you rewrote too early - undo and start again at pass one.</p></div>
+    </div>
+
+    <div class="wlbox" data-mode="lab" data-levers="brief,voice,structure,specifics"></div>
+
+    <div class="wlbox" data-mode="own"></div>
+
+    <div class="callout tip">
+      <strong>What is written and what is measured</strong>
+      The drafts are written examples - one good version, plus one specific kind of damage per missing practice. Every number in the scorecard is computed from the text above it: hedge and AI-tell counts against real word lists, passive hits by pattern, sentence-length spread, nominalisation density, a real Flesch-Kincaid grade with syllable counting, and the share of sentences carrying a number or a name. The passive check is a heuristic - a be-verb plus a participle - so read its count as a flag rather than a census. The score also cannot see whether you are right: a well-cut, specific paragraph of nonsense scores 98.
+    </div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The 40% drill is the only writing exercise I have seen change someone's writing permanently in one sitting.</strong> Not because deleting is clever, but because of what it teaches by accident: after you have thrown away 40% of a page you wrote, you start noticing the padding as you type it. People come back from this drill writing shorter first drafts, which is the actual prize. The lab number says +15 points. The real return is that the draft you write next week starts at 60% of the length it used to.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 35-45 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the full six-pass drill on three real drafts, in order, timing each one. Keep both versions of all three. By the third you should be under six minutes, and you should be able to feel which pass your own writing loses most words to.</li>
+      <li>Take a document you have already sent and try the two structural moves on it: last paragraph to the top, then promote the buried point. Do not touch a single sentence otherwise. Note whether the piece needed structure or editing, and whether you guessed right before you started.</li>
+      <li>Use the constrained cut prompt on a paragraph you like, then read the diff line by line instead of the output. Mark every place it flattened your voice, and every hedge it quietly put back.</li>
+      <li>Write the one-line summary for the piece of writing you are currently avoiding. If you cannot, you have found out something more useful than any edit would have told you - and b8 is about the kind of writing where that happens most.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This session teaches the editing half of the plain-language tradition as a procedure, and the model behaviour around it from mechanism rather than from claimed statistics. Where a number is typical rather than measured, the page says so. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The 40% drill as six ordered passes, five of them deletions</span><span class="note">Part 1 · introduced in b6, taught here as a procedure with per-pass moves</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Restructuring moves and the one-line summary test</span><span class="note">Part 2 · the test that decides between editing and restructuring</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The add-and-agree biases, with the constrained cut prompt and the counter-question</span><span class="note">Part 3 · two prompt pairs · both biases argued from training incentive</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Plain-language principles - point first, active voice, concrete nouns, short sentences</span><span class="note">Applied throughout rather than taught · the tradition behind the seven measures</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Voice preservation during editing, and diffing rather than accepting</span><span class="note">Part 3 · the method for capturing a voice sample is b3</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In the 40% drill, why does rewriting come last rather than first?</p>
+      <button class="qopt" type="button">A · Because rewriting is the hardest pass and you should warm up first</button>
+      <button class="qopt" type="button">B · Because a model should do the deletions and you should do the rewriting</button>
+      <button class="qopt" type="button">C · Because rewriting first means polishing sentences you were about to delete, and deletion is reversible while rewriting is not</button>
+      <p class="qwhy">Five of the six passes are deletions, and they run first so that the sixth has almost nothing left to do. You can paste a deleted sentence back; you cannot un-rewrite a paragraph once the original is gone. Rewriting early also hides structural trouble, because a smoothed paragraph stops announcing that it is in the wrong place.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · You hand a model a paragraph and ask it to improve this. What comes back, and why?</p>
+      <button class="qopt" type="button">A · A longer paragraph - it was trained to be helpful, and adding feels helpful</button>
+      <button class="qopt" type="button">B · A much shorter paragraph, since models are good at compression</button>
+      <button class="qopt" type="button">C · The same paragraph with only grammar corrected</button>
+      <p class="qwhy">Unconstrained improvement requests reliably grow the text, which is exactly backwards from what editing is. The fix is not a politer prompt but a hard ceiling plus a ban on new material: "cut to 60%, delete and rejoin only, no new words, ideas or transitions, keep every number, name and date". Then ask it to list what it removed so you can restore anything load-bearing.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · What tells you the piece needs restructuring rather than editing?</p>
+      <button class="qopt" type="button">A · It is over two pages long</button>
+      <button class="qopt" type="button">B · You cannot write a one-line summary of it with a subject, a verb and an ask</button>
+      <button class="qopt" type="button">C · The clarity score is under 60 after the drill</button>
+      <p class="qwhy">If the one-line summary will not come, no sentence-level work will save the piece - nobody decided what it was for. If the line needs two clauses joined by "and also", you have two documents and should split by audience. Only when the line comes out easily is the drill the right tool, and that is the same failure as check 1 of b6's pass, seen from the writer's side.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Writer session 7 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The drill, in order</b><span>Closing ritual → spoken-aloud hedges → nouns back to verbs → collapse restatements → emotional adverbs → only now rewrite.</span></div>
+      <div class="cheat-item"><b>Why the order</b><span>Five deletion passes before one rewrite. Delete before you decide, decide before you write.</span></div>
+      <div class="cheat-item"><b>What cut is worth</b><span>+15 points in the lab, 83 to 98, and 156 words down to 102. The biggest single jump alongside voice.</span></div>
+      <div class="cheat-item"><b>Hedges that stay</b><span>A real confidence level, a stated limit on what you checked, genuine deference on a decision that is not yours.</span></div>
+      <div class="cheat-item"><b>Restructure, do not restart</b><span>Last paragraph to the top. Promote the buried point. Split by audience. Then stop.</span></div>
+      <div class="cheat-item"><b>The deciding test</b><span>Write the one-line summary. Comes easily = edit. Needs "and also" = two documents. Will not come = go back to the brief.</span></div>
+      <div class="cheat-item"><b>The cut prompt</b><span>"Cut to 60%. Delete and rejoin only, no new words. Keep every number, name and date. List the hedges you removed."</span></div>
+      <div class="cheat-item"><b>Two model biases</b><span>It adds when asked to improve; it agrees when asked if something is clear. Ask it to argue you will be misread instead.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Writer session 7 of 10 · learn-ai-writing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b6-clarity-lab.html">← Previous: The clarity lab</a> &nbsp;·&nbsp; <a href="b8-difficult-writing.html">Next: Difficult writing →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/write-live.js?v=1"></script>
+<script src="../assets/app.js?v=2"></script>
+</body>
+</html>

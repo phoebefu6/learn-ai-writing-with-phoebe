@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer session 9 · Long-form without losing the thread - learn ai writing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-writing-with-phoebe</a> / Writer session 9 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Writing with Phoebe · Writer track · Session 9 of 10</div>
+    <h1>Long-form <span class="accent">without losing the thread</span></h1>
+    <p class="sub">A three-page proposal is not a long email. Everything you have learned so far still applies to each paragraph, and none of it holds the piece together, because the thing that fails at length is not the sentences - it is the argument. One claim has to survive 3,000 words and four sittings, and a model has no memory of why you made a choice in section one when it drafts section four. That is not a prompting failure you can fix with a better instruction. It is structural, and the fix is an artifact you write before you draft.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Writer track</span>
+      <span class="chip audience">Anyone whose name goes on the writing</span>
+      <span class="chip audience">Scale</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Where we are</span>
+      <span class="a2" style="flex:4">3-17 · What breaks at length</span>
+      <span class="a3" style="flex:5">17-41 · Build-along: two sections, compared</span>
+      <span class="a4" style="flex:1">41-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where this sits in the track</h2>
+    </div>
+    <p class="lede">b4 and b5 gave you the two formats that fill a week, b6 the sixty-second pass, b7 the cutting, b8 the writing you should probably not delegate at all. All of that is sentence-level and paragraph-level craft, and it scales beautifully - a well-cut paragraph is a well-cut paragraph whether it sits in an email or on page seven. What does not scale is <strong>coherence</strong>. This session is about the one document-level artifact that keeps a long piece pointing in one direction, and the three revision passes that catch it when it stops.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live clarity lab - toggle levers, watch the real score</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The four drift types and where each one appears, the outline that actually holds (argument sentence, section jobs, section briefs, not-about list), a re-anchoring pattern for drafting one section at a time, and three revision passes that take about twenty minutes on a long piece.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: WHAT BREAKS ============ -->
+  <section class="section" id="what-breaks">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the failure</span>
+      <h2>What breaks at length that does not break in an email <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">In an email, the whole argument is in your head at once. You wrote it in four minutes, you can see all of it on one screen, and if the closing line contradicts the opening one you notice immediately. At 3,000 words none of that is true. You wrote it across four sittings, you cannot hold it in view, and the contradiction between section one and section four is invisible to you precisely because you wrote both. Add a model and the problem gets worse in a specific way: <strong>it has no memory of why</strong>. It can see the words of section one if you paste them, but not the decision behind them, so it will happily build section four on a different assumption and write it beautifully.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A long document drawn as a spine, with the four places argument drift typically appears: thesis change, repetition, register shift at section seams, and a conclusion that answers an unasked question.">
+        <style>
+          .dsT { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .dsS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .dsI { font: 700 12px Inter, sans-serif; fill: #24282E; }
+          .dsX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .dsN { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .dsK { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <line x1="34" y1="46" x2="34" y2="378" stroke="#C96A4A" stroke-width="3"/>
+
+        <rect x="56" y="50" width="200" height="44" rx="7" fill="#7A2E1B"/><text class="dsT" x="70" y="70">Introduction</text>
+        <text class="dsS" x="70" y="86">the question you ask</text>
+
+        <rect x="56" y="106" width="200" height="44" rx="7" fill="#B04A2F"/><text class="dsT" x="70" y="126">Section 1</text>
+        <text class="dsS" x="70" y="142">written Monday</text>
+
+        <rect x="56" y="162" width="200" height="44" rx="7" fill="#B04A2F"/><text class="dsT" x="70" y="182">Section 2</text>
+        <text class="dsS" x="70" y="198">written Tuesday</text>
+
+        <rect x="56" y="218" width="200" height="44" rx="7" fill="#C96A4A"/><text class="dsT" x="70" y="238">Section 3</text>
+        <text class="dsS" x="70" y="254">written Wednesday</text>
+
+        <rect x="56" y="274" width="200" height="44" rx="7" fill="#C96A4A"/><text class="dsT" x="70" y="294">Section 4</text>
+        <text class="dsS" x="70" y="310">written Thursday</text>
+
+        <rect x="56" y="330" width="200" height="44" rx="7" fill="#24282E"/><text class="dsT" x="70" y="350">Conclusion</text>
+        <text class="dsS" x="70" y="366">written last, in a hurry</text>
+
+        <rect x="310" y="50" width="546" height="44" rx="7" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="dsI" x="326" y="70">NO MEMORY ACROSS SECTIONS</text>
+        <text class="dsX" x="326" y="86">Nothing in section four remembers why you framed section one that way</text>
+
+        <rect x="310" y="106" width="546" height="44" rx="7" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/><text class="dsI" x="326" y="126">SO DRIFT IS STRUCTURAL</text>
+        <text class="dsX" x="326" y="142">Not a prompting failure. More text generated at once means more convergence</text>
+
+        <circle cx="284" cy="184" r="15" fill="#7A2E1B"/>
+        <text class="dsN" x="280" y="189">1</text>
+        <rect x="310" y="162" width="546" height="44" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="dsI" x="326" y="182">THE THESIS QUIETLY CHANGES</text>
+        <text class="dsX" x="326" y="198">The argument you defend by section three is not the one you opened with</text>
+
+        <circle cx="284" cy="240" r="15" fill="#B04A2F"/>
+        <text class="dsN" x="280" y="245">2</text>
+        <rect x="310" y="218" width="546" height="44" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="dsI" x="326" y="238">THE SAME POINT, THREE TIMES</text>
+        <text class="dsX" x="326" y="254">Made again in different words, because nothing tracked that you made it</text>
+
+        <circle cx="284" cy="296" r="15" fill="#C96A4A"/>
+        <text class="dsN" x="280" y="301">3</text>
+        <rect x="310" y="274" width="546" height="44" rx="7" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="dsI" x="326" y="294">REGISTER SHIFTS AT THE SEAM</text>
+        <text class="dsX" x="326" y="310">Sections written in different sittings do not sound like one person</text>
+
+        <circle cx="284" cy="352" r="15" fill="#33475C"/>
+        <text class="dsN" x="280" y="357">4</text>
+        <rect x="310" y="330" width="546" height="44" rx="7" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="dsI" x="326" y="350">THE CONCLUSION MISSES</text>
+        <text class="dsX" x="326" y="366">It answers a question the introduction never actually asked</text>
+
+        <rect x="34" y="398" width="14" height="14" rx="3" fill="#33475C"/><text class="dsK" x="58" y="410">Every one of the four shows up at a seam: a place where you stopped and came back later.</text>
+        <rect x="34" y="422" width="14" height="14" rx="3" fill="#33475C"/><text class="dsK" x="58" y="434">The outline is not planning overhead. It is the only memory the piece has.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the four drift points, and where in a long document each one lands</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why this is structural rather than a prompting problem<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>People try to fix drift with better instructions, and it does not work, for two reasons worth separating:</p>
+        <ul>
+          <li><strong>Nothing carries your reasoning forward.</strong> You can paste section one into the prompt for section four, and the model will match its vocabulary and its shape. What it cannot see is the decision underneath: that you deliberately framed this as a sequencing problem rather than a budget problem, and that half the piece depends on that choice. Words travel between sections. Intent does not, unless you write it down.</li>
+          <li><strong>The longer the generated stretch, the flatter it gets.</strong> Ask for 3,000 words in one go and you get prose that converges on a middle - the same sentence lengths, the same three-part constructions, the same transitions. That is not laziness on the model's part. It is what generation does at length, and Part 3 has the measured evidence.</li>
+        </ul>
+        <p>So the defence is not a cleverer prompt. It is an artifact outside the conversation that holds the decisions, plus revision passes designed to catch the four failures above. Both are cheap. Neither is optional at this length.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The four drift types, and how each one gets caught<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Name them, because a named failure is a checkable one:</p>
+        <ul>
+          <li><strong>Thesis drift.</strong> The argument mutates as you learn more while writing, which is healthy - the failure is not updating the earlier sections. Caught by the first-sentence read-through in Part 3.</li>
+          <li><strong>Repetition.</strong> The same point made three times in different words, usually the point you are most confident about. Caught by counting your own key nouns.</li>
+          <li><strong>Register shift.</strong> Section two sounds like a Tuesday and section four sounds like a model. This is where AI-drafted sections are most conspicuous, not within a paragraph but across a boundary. Caught by reading the seams.</li>
+          <li><strong>Answer mismatch.</strong> The conclusion resolves something the introduction never asked, because the introduction was written first and never revisited. Caught by reading only the opening and closing, back to back, and nothing in between.</li>
+        </ul>
+        <p>Notice what is not on the list: bad sentences. At length, the sentences are usually fine. That is exactly why long AI-assisted documents get approved and then quietly fail to persuade anybody.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE OUTLINE ============ -->
+  <section class="section" id="the-outline">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the artifact</span>
+      <h2>The outline that holds <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Most outlines are a list of topics, which is why most outlines do not survive contact with drafting: a topic can absorb anything, so nothing you write ever violates it. An outline that holds is made of four parts, all of them written before you draft a word, and together they take about fifteen minutes. The last part is the one everybody skips and the one that does most of the work.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 396" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The four parts of an outline that holds - argument sentence, section jobs, section briefs and a not-about list - each paired with the drift it prevents.">
+        <style>
+          .oaH { font: 700 11px Inter, sans-serif; fill: #6B7480; letter-spacing: .04em; }
+          .oaT { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .oaS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .oaI { font: 700 12px Inter, sans-serif; fill: #24282E; }
+          .oaX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .oaK { font: 600 13px Inter, sans-serif; fill: #101A24; }
+          .oaWire { stroke: #C96A4A; stroke-width: 2; fill: none; marker-end: url(#oaHd); }
+        </style>
+        <defs>
+          <marker id="oaHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#C96A4A"/>
+          </marker>
+        </defs>
+        <text class="oaH" x="24" y="36">THE OUTLINE ARTIFACT</text>
+        <text class="oaH" x="356" y="36">WHAT EACH PART PREVENTS</text>
+
+        <rect x="24" y="56" width="300" height="60" rx="8" fill="#7A2E1B"/><text class="oaT" x="40" y="76">1 · THE ARGUMENT SENTENCE</text>
+        <text class="oaS" x="40" y="94">One sentence saying what the piece</text>
+        <text class="oaS" x="40" y="110">argues. Pasted into every prompt.</text>
+        <path class="oaWire" d="M324,86 L352,86"/>
+        <rect x="356" y="56" width="500" height="60" rx="8" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="oaI" x="372" y="76">Thesis drift</text>
+        <text class="oaX" x="372" y="94">The model is re-anchored every time you draft, and you notice</text>
+        <text class="oaX" x="372" y="110">yourself the moment the sentence stops being true.</text>
+
+        <rect x="24" y="128" width="300" height="60" rx="8" fill="#B04A2F"/><text class="oaT" x="40" y="148">2 · SECTION JOBS</text>
+        <text class="oaS" x="40" y="166">Each section gets a job and a claim,</text>
+        <text class="oaS" x="40" y="182">never a topic.</text>
+        <path class="oaWire" d="M324,158 L352,158"/>
+        <rect x="356" y="128" width="500" height="60" rx="8" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="oaI" x="372" y="148">Sections that wander</text>
+        <text class="oaX" x="372" y="166">A topic can absorb anything. A claim cannot, so material that</text>
+        <text class="oaX" x="372" y="182">does not serve it has nowhere to sit.</text>
+
+        <rect x="24" y="200" width="300" height="60" rx="8" fill="#C96A4A"/><text class="oaT" x="40" y="220">3 · SECTION BRIEFS</text>
+        <text class="oaS" x="40" y="238">What it must establish, what it must</text>
+        <text class="oaS" x="40" y="254">not cover, what it hands on.</text>
+        <path class="oaWire" d="M324,230 L352,230"/>
+        <rect x="356" y="200" width="500" height="60" rx="8" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/><text class="oaI" x="372" y="220">Repetition and gaps</text>
+        <text class="oaX" x="372" y="238">If section two already made the point, section four's brief says</text>
+        <text class="oaX" x="372" y="254">so, and the handoff between them is explicit.</text>
+
+        <rect x="24" y="272" width="300" height="60" rx="8" fill="#33475C"/><text class="oaT" x="40" y="292">4 · THE NOT-ABOUT LIST</text>
+        <text class="oaS" x="40" y="310">The things this piece is deliberately</text>
+        <text class="oaS" x="40" y="326">not going to cover.</text>
+        <path class="oaWire" d="M324,302 L352,302"/>
+        <rect x="356" y="272" width="500" height="60" rx="8" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/><text class="oaI" x="372" y="292">Scope creep, which is most of the length</text>
+        <text class="oaX" x="372" y="310">The single best defence against drift, and the part everyone</text>
+        <text class="oaX" x="372" y="326">skips because it feels like writing about nothing.</text>
+
+        <rect x="24" y="352" width="14" height="14" rx="3" fill="#33475C"/><text class="oaK" x="48" y="364">Write all four before drafting. Fifteen minutes, and the piece stops arguing with itself.</text>
+        <rect x="24" y="376" width="14" height="14" rx="3" fill="#33475C"/><text class="oaK" x="48" y="388">If a section needs a paragraph of transition to connect, the outline was wrong.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - four parts, fifteen minutes, and the drift each one blocks</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>One sentence stating the argument<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Before anything else, write the piece in one sentence. Not the topic. The argument: what you are claiming and what follows from it. If you cannot write it, you are not ready to draft, and drafting will feel like wading because you are using the writing to find a position you have not taken yet.</p>
+        <p>For the Cadence proposal that slipped, the topic is "the education pilot". The argument is: <em>the education pilot should ship in March with two schools instead of five, because the evidence changed who the buyer is and we would rather learn that cheaply.</em> Everything in the piece either serves that or does not belong.</p>
+        <div class="prompt-box bad">
+          <span class="label">Topic-shaped - guarantees drift</span>
+          <p>"Write a 2,000-word proposal about our education pilot for the leadership team. Cover the market, the timeline, the risks and a recommendation."</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Argument-shaped, with a job and a fence</span>
+          <p>"Argument of the whole piece: the education pilot should ship in March with two schools instead of five, because the evidence changed who the buyer is and we would rather learn that cheaply.<br>Draft section 2 only, about 350 words. Its job: establish that the buyer moved from district IT to heads of department, using the three interviews below. It must NOT discuss timeline or pricing - those are sections 3 and 4. It hands off to section 3 by naming what we still do not know about procurement.<br>This piece is not about: the enterprise roadmap, hiring, or competitor positioning."</p>
+        </div>
+        <p>The second prompt is longer to write and shorter to fix. That trade is the whole session.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>A section list where each section has a job and a claim<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Compare two lines from the same outline:</p>
+        <ul>
+          <li><strong>Topic:</strong> "Section 2: the market." Anything at all can go here. It will grow to 600 words and prove nothing.</li>
+          <li><strong>Job and claim:</strong> "Section 2 establishes that the buyer moved from district IT to heads of department. Claim: the three interviews show budget authority sitting with curriculum leads."</li>
+        </ul>
+        <p>A claim is testable against the piece's argument, so you can tell when a paragraph has stopped helping. A topic never fails that test, which is why topic outlines feel comfortable and let everything through. Write the section list as five to eight lines of job-plus-claim, and read them in sequence: they should sound like a compressed version of the argument. If they sound like a table of contents, you still have topics.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The section brief: establish, exclude, hand on<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Each section then gets three lines of its own, and this is the part that makes drafting one section at a time safe:</p>
+        <ul>
+          <li><strong>What it must establish.</strong> The one thing a reader should believe by the end of it, with the facts it is allowed to use.</li>
+          <li><strong>What it must not cover.</strong> Named explicitly, with the section that owns it instead. This is where repetition dies: if section four's brief says "do not re-argue the buyer change, section two did that", nobody re-argues it - including you at 6pm.</li>
+          <li><strong>What it hands to the next one.</strong> A sentence naming the question the next section picks up. If you cannot write the handoff, the two sections are in the wrong order.</li>
+        </ul>
+        <p>Three lines per section, eight sections, ten minutes. Against a 3,000-word piece that is the best-value writing you will do all week, and unlike the draft itself it does not have to be good prose.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The "what this piece is not about" list<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Write down four to six things the piece is deliberately not covering. It feels like writing about nothing. It is the single best defence against drift, for three reasons:</p>
+        <ul>
+          <li><strong>It survives handing to a model.</strong> Exclusions are the one instruction generation respects reliably, because "do not cover X" needs no judgement. Vague quality instructions do need judgement, which is why they fail.</li>
+          <li><strong>It settles arguments with reviewers.</strong> "Should we say more about hiring?" has an answer already written down, agreed before anyone was emotionally invested in a paragraph.</li>
+          <li><strong>It is where the length went.</strong> Long documents are rarely long because the argument is big. They are long because six adjacent arguments got in. The not-about list is the door.</li>
+        </ul>
+        <p>Put it at the top of the outline, not the bottom. Half the time, writing it makes you realise the piece is actually two pieces, which is a very cheap discovery to make on day one.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Drafting section by section, re-anchored every time<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Never ask for the whole piece. Draft one section per prompt, and paste the argument sentence at the top of every single one, along with the section's job and what the previous section established. It is repetitive to type and it is the mechanism: you are supplying, by hand, the memory the tool does not have.</p>
+        <div class="prompt-box bad">
+          <span class="label">Continues the words and loses the argument</span>
+          <p>"Great, now continue and write section four."</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Re-anchors before it writes a word</span>
+          <p>"Argument of the whole piece: ship the education pilot in March with two schools, because the evidence changed who the buyer is and we would rather learn cheaply.<br>Section 3 established that procurement runs 6 to 12 months through district IT and that two of our three interviewees have discretionary budget under 20k.<br>Section 4's job: show that a two-school March pilot fits inside discretionary budget. About 300 words. Do NOT re-argue the buyer change or restate the timeline. Hand off by naming the one number we still need.<br>Match the register of the passage below, and use only the figures in it."</p>
+        </div>
+        <p>Two more habits that go with this. Keep the outline in a separate file rather than in the chat, so it does not scroll away and get quietly re-summarised. And when the argument sentence genuinely changes mid-draft - it will, once or twice - stop, edit the sentence, and go back and fix the sections written under the old one. That is a twenty-minute job on Wednesday and a rewrite on Friday.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: REVISION ============ -->
+  <section class="section" id="revision">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · keeping the thread</span>
+      <h2>Three passes through the revision <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">The outline stops most drift. Revision catches the rest, and at length you cannot catch it by reading normally, because reading normally is exactly how you wrote it. Each of these passes deliberately refuses to read the piece as prose. That is the trick: you are auditing structure, and structure is invisible while you are following sentences.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The first-sentence read-through<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Read only the first sentence of every paragraph, in sequence, and nothing else. Ten minutes on a long piece. What you are listening for is whether the argument still walks: each opener should advance it, and the sequence should sound like a slightly clipped summary of your case.</p>
+        <p>Three failures show up immediately and are almost impossible to see when reading in full:</p>
+        <ul>
+          <li><strong>Two openers making the same move.</strong> That is repetition, six pages apart, which no amount of careful reading catches.</li>
+          <li><strong>An opener that does not advance anything.</strong> Usually a paragraph that exists because you had material, not because the argument needed it.</li>
+          <li><strong>A gap between two openers you cannot bridge out loud.</strong> That is a missing step, and it is where readers stop believing you.</li>
+        </ul>
+        <p>This pass is also a good habit-former for its own sake: writing paragraphs whose first sentences carry the argument is most of what people mean by structured writing.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The repetition audit<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Pick your five key nouns - the ones the argument is built from - and search the document for each. Count the hits and read them in a row. You are not looking for the word count. You are looking for how many times you made the <em>same point</em> in different words, which is different and much more common.</p>
+        <p>Long pieces repeat for a predictable reason: you were most confident about that point, so it arrived unbidden in three sittings. The fix is to keep the best version and cut the other two, then check the section briefs to see which section actually owns it. If two briefs both claim it, the outline needs a line, or those two sections need to be one.</p>
+        <p>Related and worth timing: repetition is where a long document's word count hides. Most 3,000-word drafts have 2,200 words of argument in them.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The register audit across section boundaries<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Read the last paragraph of each section immediately followed by the first paragraph of the next one, and only those pairs. Seven boundaries in a long piece, five minutes. This is where AI-drafted sections are most conspicuous - not inside a paragraph, where the prose is genuinely good, but at the seam, where suddenly the sentences all run 18 to 22 words and the vocabulary goes up a register.</p>
+        <p>What to do about a seam that jars: rewrite the newer side in the older side's voice rather than meeting in the middle. Meeting in the middle produces a third voice that is nobody's. If several seams jar, run the b6 sixty-second pass on each section separately and compare the hedge and rhythm rows - the numbers will tell you which sections were drafted by the tool with the voice sample off.</p>
+        <p>This is also the argument for b3's voice doc living somewhere you can paste from in four seconds. At length you paste it eight times, not once.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The transitions rule<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>If a section needs a paragraph of transition to connect to the next one, the outline was wrong. Delete the transition and fix the order.</p>
+        <p>Transition paragraphs are drift made visible. They exist because two sections do not actually follow from one another, and a paragraph of "having considered the market, we now turn to the timeline" papers over the join. Models produce them enthusiastically, because they were trained on documents full of them, and they are indistinguishable from writing until you count what they establish, which is nothing.</p>
+        <p>The legitimate version is one sentence, doing real work: naming the question the next section answers. That is your section brief's handoff line, which you already wrote. If it takes more than a sentence, the sections are in the wrong sequence, or one of them should not exist.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>Convergence gets worse the more text you generate at once, and that is measurable.</strong> In Meincke, Mollick and Terwiesch, "Prompting Diverse Ideas" (arXiv:2402.01727), cosine similarity - where lower means more diverse - came out at <strong>0.243</strong> for a group of students, <strong>0.255</strong> with Chain-of-Thought prompting, and <strong>0.377</strong> for a base GPT-4 prompt. So a default model output pool is markedly more internally similar than a human crowd, and better prompting closes most of the gap. Read that as the case for drafting a long piece in briefed, re-anchored sections rather than one long generation: every section you ask for separately, with its own job and its own facts, is a prompt doing the work that closed the gap in that study. One 3,000-word request is the base-prompt condition, at length.</p>
+    </div>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Two sections of your own, scored separately <span class="tag demo">★ 20 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">Drift is a document-level failure, so we catch it with a passage-level tool used twice. Take something long you have written - a proposal, a report, a review document - and score two different sections in the box below, one at a time. Read the rows side by side rather than the totals. Sections drafted in different sittings, or with the voice sample off, show a different rhythm spread and a different hedge profile, and that difference is exactly what a reader feels at the seam without being able to name it.</p>
+
+    <div class="steps">
+      <div class="step"><p>Paste section one, or your introduction. Write down four numbers: hedges, rhythm, specifics, and the total. Ignore how you feel about it.</p></div>
+      <div class="step"><p>Now paste a section from the back half of the same document, ideally one drafted on a different day. Same four numbers.</p></div>
+      <div class="step"><p>Compare the rhythm rows first. A flat spread in one section and a varied spread in the other is a seam your reader will feel and will not be able to name.</p></div>
+      <div class="step"><p>Compare the specifics rows. The back half is usually thinner, because the facts ran out and the drafting did not stop. That is a research gap wearing prose.</p></div>
+      <div class="step"><p>Finally, do the first-sentence read-through on the whole piece and write down one drift you found. Bring it to b10, where it becomes part of your real week.</p></div>
+    </div>
+
+    <div class="wlbox" data-mode="own"></div>
+
+    <div class="callout tip">
+      <strong>What is written and what is measured</strong>
+      Every number here is computed from the text you paste, in your browser: hedge and AI-tell counts against real word lists, passive hits by pattern, sentence-length spread, nominalisation density, a real Flesch-Kincaid grade with syllable counting, and the share of sentences carrying a number or a name. The passive check is a heuristic - a be-verb plus a participle - so read its count as a flag rather than a census. One more limit matters at this length: <strong>this box measures a passage, not an argument</strong>. It cannot see whether section four contradicts section one. Two high scores can still be a drifting document, which is why the three revision passes are done by you.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 40-50 min total</span></h2>
+    </div>
+    <ul>
+      <li>Write the four-part outline for a long piece you actually owe someone: argument sentence, section jobs with claims, three-line section briefs, and the not-about list. Time it. If the argument sentence takes more than ten minutes, that is the finding.</li>
+      <li>Draft one section using the re-anchoring prompt, pasting the argument sentence and the previous section's result at the top. Then draft a second section the lazy way, with "now continue". Read the two seams and mark which is which.</li>
+      <li>Run the first-sentence read-through on a long document you have already sent. Write down every place the argument fails to walk, and how many of them are repetition rather than gaps.</li>
+      <li>Do the register audit on the same document: last paragraph of each section against the first paragraph of the next. Score the two sections that jar most in the box above and compare their rhythm rows.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This session teaches the document-level half of the plain-language and editing tradition - outlining, sequencing and revision passes - plus the published diversity evidence on what happens when you generate long stretches in one go. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The four drift types, and why drift is structural rather than a prompting failure</span><span class="note">Part 1 · each one paired with the pass that catches it</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The outline that holds: argument sentence, section jobs, section briefs, not-about list</span><span class="note">Part 2 · plus the re-anchoring prompt for drafting section by section</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Meincke, Mollick &amp; Terwiesch, "Prompting Diverse Ideas" (arXiv:2402.01727)</span><span class="note">Part 3 · cosine similarity 0.243 students, 0.255 Chain-of-Thought, 0.377 base GPT-4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">The three revision passes: first sentences, repetition, register at the seams</span><span class="note">Part 3 · they reuse the b6 sixty-second pass at section scale</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Homogenisation and ownership of AI-assisted work</span><span class="note">Named as the reason voice matters most at length · the evidence is treated in b3 and a4</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Why is drift at 3,000 words called structural rather than a prompting failure?</p>
+      <button class="qopt" type="button">A · Because current models have context windows too small for long documents</button>
+      <button class="qopt" type="button">B · Because nothing carries your reasoning forward - the model can see section one's words but not the decision behind them</button>
+      <button class="qopt" type="button">C · Because long documents always need more than one author</button>
+      <p class="qwhy">Words travel between sections. Intent does not, unless you write it down. A model drafting section four can match section one's vocabulary and shape while building on a different assumption, and it will do it fluently. That is why the fix is an artifact outside the conversation - the argument sentence and the section briefs - rather than a better instruction.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · What does the "what this piece is not about" list mainly buy you?</p>
+      <button class="qopt" type="button">A · It shortens the introduction, since you no longer have to set expectations</button>
+      <button class="qopt" type="button">B · It gives reviewers a list of topics to add in the second draft</button>
+      <button class="qopt" type="button">C · It blocks scope creep, which is where most of a long document's length comes from</button>
+      <p class="qwhy">Long pieces are rarely long because the argument is big. They are long because six adjacent arguments got in. Exclusions are also the one instruction generation follows reliably, because "do not cover X" needs no judgement. And writing the list often reveals that the piece is actually two pieces, which is a very cheap thing to find out on day one.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · You read only the first sentence of every paragraph, in sequence. What is that pass for?</p>
+      <button class="qopt" type="button">A · Checking that the argument still walks - and catching repetition or gaps six pages apart</button>
+      <button class="qopt" type="button">B · Checking that every paragraph opens with a strong hook</button>
+      <button class="qopt" type="button">C · Estimating the reading grade without running a tool</button>
+      <p class="qwhy">Reading normally is how you wrote it, so it hides structure. Reading only the openers in sequence exposes three things at once: two paragraphs making the same move, an opener that advances nothing, and a gap between openers you cannot bridge out loud. The last one is where readers stop believing you.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Writer session 9 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Drift is structural</b><span>Words travel between sections, intent does not. The model has no memory of why you chose section one's frame.</span></div>
+      <div class="cheat-item"><b>The four drift types</b><span>Thesis quietly changes · same point three times · register shifts at the seam · conclusion answers an unasked question.</span></div>
+      <div class="cheat-item"><b>The argument sentence</b><span>One sentence saying what the piece argues. If you cannot write it, you are not ready to draft.</span></div>
+      <div class="cheat-item"><b>Jobs, not topics</b><span>Every section gets a job and a claim. A topic absorbs anything; a claim can fail the test.</span></div>
+      <div class="cheat-item"><b>Section brief, three lines</b><span>What it must establish · what it must not cover · what it hands to the next section.</span></div>
+      <div class="cheat-item"><b>The not-about list</b><span>Four to six exclusions, written first. Best single defence against drift, and the part everyone skips.</span></div>
+      <div class="cheat-item"><b>Re-anchor every prompt</b><span>Paste the argument sentence, this section's job, and what the last section established. Never "now continue".</span></div>
+      <div class="cheat-item"><b>Three revision passes</b><span>First sentences in sequence · count your key nouns · read the seams. If a section needs a transition paragraph, the outline was wrong.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Writer session 9 of 10 · learn-ai-writing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b8-difficult-writing.html">← Previous: Difficult writing</a> &nbsp;·&nbsp; <a href="b10-capstone-week.html">Next: Capstone - one real week →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/write-live.js?v=1"></script>
+<script src="../assets/app.js?v=2"></script>
+</body>
+</html>

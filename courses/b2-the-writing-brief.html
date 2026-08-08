@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer session 2 · The brief for a piece of writing - learn ai writing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-writing-with-phoebe</a> / Writer session 2 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Writing with Phoebe · Writer track · Session 2 of 10</div>
+    <h1>The brief for <span class="accent">a piece of writing</span></h1>
+    <p class="sub">A brief is five slots long and takes about ninety seconds to fill: reader, decision, ask, facts, register. Skip it and you get a draft that opens with a windup and closes without a request. Fill four of the five and you get something worse, because a model that has no facts does not leave a blank - it writes "a fair amount" and "considerably longer than anticipated", and those read as information. Tonight we build the brief, watch the lab prove that <strong>brief without facts is only worth 4 points</strong>, and learn the habit that separates people who get value from a model from people who argue with one: when the draft is wrong, change the brief.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Writer track</span>
+      <span class="chip audience">Anyone whose name goes on the writing</span>
+      <span class="chip audience">Rungs 1 and 4</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Where we are</span>
+      <span class="a2" style="flex:4">3-17 · The five slots</span>
+      <span class="a3" style="flex:3">17-30 · Plausible vagueness + the loop</span>
+      <span class="a4" style="flex:4">30-45 · Build-along + Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PART 1: THE FIVE SLOTS ============ -->
+  <section class="section" id="five-slots">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the artifact</span>
+      <h2>Five slots, and a test for each one <span class="tag concept">14 min live</span></h2>
+    </div>
+    <p class="lede">The brief is not a prompt. It is the thinking you were going to have to do anyway, written down in an order that happens to be readable by a model - and by a colleague, and by you in three weeks when you have forgotten why you sent the thing. Each slot has a one-line test for whether it is specific enough, and every one of those tests fails in the same direction: too abstract to act on. The Cadence week is the running example. The education proposal has slipped two weeks, 48 customer samples have changed who the buyer is, one technical assumption about integration is untested, and the exec team needs to decide on Thursday.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five slots of a writing brief - reader, decision, ask, facts, register - and the clarity lab row each one moves.">
+        <style>
+          .b5T { font: 700 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .b5S { font: 400 11px Inter, sans-serif; fill: #FFFFFF; opacity: .93; }
+          .b5L { font: 700 10px Inter, sans-serif; fill: #B04A2F; letter-spacing: .5px; }
+          .b5X { font: 400 11px Inter, sans-serif; fill: #6B7480; }
+          .b5A { font: 700 12px Inter, sans-serif; fill: #6B7480; }
+          .b5N { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <text class="b5A" x="24" y="30">FILL ALL FIVE, OR THE MODEL FILLS THEM FOR YOU</text>
+
+        <rect x="24" y="52" width="156" height="58" rx="8" fill="#7A2E1B"/>
+        <text class="b5T" x="38" y="76">1 · READER</text>
+        <text class="b5S" x="38" y="95">who, and knows what?</text>
+
+        <rect x="193" y="52" width="156" height="58" rx="8" fill="#B04A2F"/>
+        <text class="b5T" x="207" y="76">2 · DECISION</text>
+        <text class="b5S" x="207" y="95">what changes?</text>
+
+        <rect x="362" y="52" width="156" height="58" rx="8" fill="#C96A4A"/>
+        <text class="b5T" x="376" y="76">3 · ASK</text>
+        <text class="b5S" x="376" y="95">one action, one date</text>
+
+        <rect x="531" y="52" width="156" height="58" rx="8" fill="#B04A2F"/>
+        <text class="b5T" x="545" y="76">4 · FACTS</text>
+        <text class="b5S" x="545" y="95">numbers you supply</text>
+
+        <rect x="700" y="52" width="156" height="58" rx="8" fill="#24282E"/>
+        <text class="b5T" x="714" y="76">5 · REGISTER</text>
+        <text class="b5S" x="714" y="95">a sample, not a mood</text>
+
+        <rect x="24" y="124" width="156" height="68" rx="10" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="b5L" x="38" y="146">LAB CHECK</text>
+        <text class="b5X" x="38" y="165">specifics: names</text>
+        <text class="b5X" x="38" y="183">reading grade</text>
+
+        <rect x="193" y="124" width="156" height="68" rx="10" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="b5L" x="207" y="146">LAB CHECK</text>
+        <text class="b5X" x="207" y="165">hedges: fewer</text>
+        <text class="b5X" x="207" y="183">point up front</text>
+
+        <rect x="362" y="124" width="156" height="68" rx="10" fill="#FDF1EC" stroke="#C96A4A" stroke-width="1.5"/>
+        <text class="b5L" x="376" y="146">LAB CHECK</text>
+        <text class="b5X" x="376" y="165">passives: fewer</text>
+        <text class="b5X" x="376" y="183">a date is a number</text>
+
+        <rect x="531" y="124" width="156" height="68" rx="10" fill="#ECF0F5" stroke="#33475C" stroke-width="1.8"/>
+        <text class="b5L" x="545" y="146" fill="#33475C">LAB CHECK</text>
+        <text class="b5X" x="545" y="165">specifics: numbers</text>
+        <text class="b5X" x="545" y="183">worth 13 points</text>
+
+        <rect x="700" y="124" width="156" height="68" rx="10" fill="#ECF0F5" stroke="#33475C" stroke-width="1.8"/>
+        <text class="b5L" x="714" y="146" fill="#33475C">LAB CHECK</text>
+        <text class="b5X" x="714" y="165">AI-tells: fewer</text>
+        <text class="b5X" x="714" y="183">rhythm varies</text>
+
+        <rect x="24" y="216" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="b5N" x="48" y="228">Slots 1 to 3 are decisions you make. Slot 4 is homework. Slot 5 is an artifact you build once, in b3.</text>
+        <rect x="24" y="240" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="b5N" x="48" y="252">If you cannot fill slot 4 with real numbers, the writing is not ready - the finding-out is.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the five slots, and the clarity-lab row each one moves</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Slot 1 · Reader - who exactly, and what do they already know<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The test:</strong> could you name the person, and one thing they already believe that you are about to change?</p>
+        <p>"The exec team" is not a reader. "Our CFO, who signed off the education plan in March on a six-month payback and has not seen the 48 samples" is a reader, and it determines almost everything downstream: how much context you owe, what you can leave out, and which fact lands hardest. Half the length problem in work writing is a reader problem - when you do not know what they know, you explain everything, just in case.</p>
+        <p>The second half of the slot is the one people skip. Write down what they already know. That list is your permission to delete. In the Cadence case the exec team already knows the proposal exists and already knows the timeline; what they do not know is that the evidence has moved the buyer from an IT budget to an academic one, which is the only genuinely new thing in the piece and belongs in the first sentence.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Slot 2 · Decision - what changes because they read this<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The test:</strong> can you finish this sentence without using the word "aware"? "After reading this, they will ______."</p>
+        <p>If the honest answer is "be aware of the situation", you are writing theatre and you should either find the real decision or not send the piece. Awareness is what we write when we want credit for having communicated without asking anyone for anything. It is also the single most reliable predictor of a draft nobody replies to.</p>
+        <p>At Cadence the decision is concrete and slightly uncomfortable: either the proposal ships to academic buyers on the original date with the integration assumption untested, or it slips a further four weeks while engineering settles it. That is a real fork, and naming it is what makes the writing worth reading. Note how much shorter the piece gets once the decision is on the page - you no longer need three paragraphs of setup, because the fork explains itself.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Slot 3 · Ask - the single action, with a date<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The test:</strong> is it one action, is there a date, and could the reader do it today without asking you a question first?</p>
+        <p>Three failures show up here constantly. <strong>Plural asks</strong>: a list of four requests, which reliably produces zero. <strong>Undated asks</strong>: "when you get a chance", which is a promise that nothing will happen. <strong>Asks that are really questions about the ask</strong>: "let me know your thoughts", which hands the reader the job of working out what you needed.</p>
+        <p>The Cadence ask is one sentence: "Reply by Thursday with ship or slip." That is a date, an action, and a binary. It also does something for you that is easy to miss - it makes the rest of the writing accountable, because every paragraph now has to earn its place by helping the reader choose one of two words.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Slot 4 · Facts - the numbers, names and dates you supply<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The test:</strong> could a reader check every claim in the piece against something that exists?</p>
+        <p>This is the slot that costs you real time, and the only one you cannot delegate. In the Cadence brief it is five things: the proposal has slipped <strong>two weeks</strong>, the decision is due <strong>Thursday</strong>, the academic procurement cycle runs <strong>6 to 12 months</strong>, <strong>31 institutions</strong> are in the current pipeline, and <strong>48 customer samples</strong> moved the buyer. Five facts, four of which were sitting in a spreadsheet someone already owned.</p>
+        <p>Now the honest part, and it is the most useful sentence in this session: <strong>if you cannot fill this slot, the writing is not ready.</strong> Not "the prompt needs work" - the work needs work. The instinct to draft anyway is strong precisely because drafting feels like progress, and a model will happily give you 200 words that look like progress. What you actually needed was twenty minutes and a query. In b6 we come back to this as a send-back rule: a draft with no checkable claims goes back to the author, not to the editor.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Slot 5 · Register - the voice sample, not the adjective<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The test:</strong> is there real writing pasted into the slot, or only words describing writing?</p>
+        <p>"Friendly but professional", "warm and confident", "clear and concise" - all of these are compatible with the corporate default, which is why they change almost nothing. A model cannot infer your register from an adjective any more than a tailor can infer your measurements from "smart casual". What works is three to eight paragraphs of your own sent writing plus an instruction to match it, and a short banned list.</p>
+        <p>Tonight you can fill this slot roughly: paste something you actually sent. <strong>b3 builds it properly</strong>, because the register lever is worth <strong>+16 points</strong> on the ladder, the biggest single jump there is, and it deserves its own session rather than a bullet at the end of this one.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: PLAUSIBLE VAGUENESS ============ -->
+  <section class="section" id="plausible-vagueness">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the central idea</span>
+      <h2>Plausible vagueness <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Here is the mechanism, because once you see it you cannot unsee it. You ask for an update and you do not supply the numbers. The model needs a sentence in that position. It cannot leave a gap, because a gap is not a fluent continuation, so it produces the most probable thing that fits the shape of an update: <em>"the timeline has extended considerably longer than anticipated"</em>, <em>"early research suggests a shift in buyer profile"</em>, <em>"a fair amount of pipeline is affected"</em>. Every one of those is grammatical, appropriately cautious, and completely unfalsifiable. And it reads as information.</p>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The five Cadence facts, and what fills the hole when you withhold them.</strong> "Slipped two weeks" becomes "the timeline has moved out somewhat". "Decision needed Thursday" becomes "we would appreciate direction in the near term". "6 to 12 months" becomes "procurement cycles in this segment can be lengthy". "31 institutions" becomes "a number of institutions". "48 samples" becomes "some early customer research". Read the right-hand column as a paragraph and it sounds like a competent update from a competent person. Nobody in that meeting can act on a single clause of it, and nobody will say so, because there is no error to point at.</p>
+    </div>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why this is worse than an obvious error<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>An obvious error has one great virtue: it gets caught. A wrong number, a broken sentence, a claim your reader knows to be false - all of these trip a reviewer, get flagged, and get fixed. The cost is embarrassment, which is cheap and fast.</p>
+        <p>Plausible vagueness has the opposite profile. It <strong>survives review</strong>, because review is a search for things that are wrong and vagueness is not wrong. Then it does three quiet kinds of damage:</p>
+        <ul>
+          <li><strong>It transfers work to the reader.</strong> Someone has to go and find out what "considerably longer" means, and that someone is now more senior than you.</li>
+          <li><strong>It launders the fact that you did not check.</strong> A blank space would have told the truth: this is unknown. "A fair amount" implies you looked.</li>
+          <li><strong>It costs credibility slowly.</strong> Nobody remembers a single vague update. Everybody notices, over a year, whose writing they have to follow up on.</li>
+        </ul>
+        <p>This is also why "is this AI writing?" is the wrong question, which a2 argues at manager altitude. The question that helps is "which claims in here could I check?" - and that question works identically on a draft you wrote by hand at midnight.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The lab proof: a brief without facts is half a brief<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>You do not have to take this on faith - the ladder measures it. The unbriefed draft scores <strong>48</strong>. Turn the brief lever on, with no facts supplied, and you get <strong>52</strong>. Four points for the single practice everyone tells you is the whole game.</p>
+        <p>The brief did work: the point moved to the front, and there is now an ask at the bottom. But look at the specifics row. It barely moves, because there was nothing to be specific with, so the model filled the same holes with the same probable filler - just in a better order. A well-organised piece of vagueness is still vagueness, and it is arguably more dangerous, because the structure signals rigour.</p>
+        <p>Then watch what facts do. Add the register and the shape, and the specifics lever takes you from <strong>70 to 83</strong> - thirteen points from one slot, and the largest jump of any rung except voice and cutting. That is the whole argument for slot 4 in one number.</p>
+        <table class="clean">
+          <thead><tr><th>Rung</th><th>What is on</th><th>Score</th><th>What moved</th></tr></thead>
+          <tbody>
+            <tr><td>0</td><td>Nothing - unbriefed draft</td><td><strong>48</strong></td><td>223 words, no ask, no numbers</td></tr>
+            <tr><td>1</td><td>+ brief, no facts</td><td><strong>52</strong></td><td>Order improved, vagueness intact</td></tr>
+            <tr><td>2</td><td>+ voice sample</td><td><strong>68</strong></td><td>Passives and AI-tells drop</td></tr>
+            <tr><td>3</td><td>+ structure</td><td><strong>70</strong></td><td>Rhythm and scannability</td></tr>
+            <tr><td>4</td><td>+ specifics</td><td><strong>83</strong></td><td>The specifics row climbs, +13</td></tr>
+            <tr><td>5</td><td>+ cut</td><td><strong>98</strong></td><td>102 words, shippable</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE ITERATION LOOP ============ -->
+  <section class="section" id="iteration">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the habit</span>
+      <h2>When the draft is wrong, change the brief <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Most people iterate on the draft. They read the output, dislike it, and reply "can you make it punchier" - and then again, and again, until they have spent fifteen minutes negotiating with a text box and produced something they would not have written themselves. The move that works is unglamorous: go back up a level and fix the input. A wrong draft is almost always a symptom, and the diagnosis is usually one empty slot.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Three rounds on the Cadence update<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Round 1 - the vague request.</strong> What most people send, and it produces the 48-point draft: fluent, 223 words, opens with a paragraph about how the team has been working hard, closes by inviting questions.</p>
+        <div class="prompt-box bad">
+          <span class="label">Round 1 · no slots filled</span>
+          <p>"Write an update on the education proposal for the exec team. It's slipped a bit and there's some new customer research. Keep it professional."</p>
+        </div>
+        <p><strong>Round 2 - add reader, decision and ask.</strong> The diagnosis after round 1 is not "the prose is flabby", it is "slots 1 to 3 are empty". Filling them gets you a piece that opens with the fork and ends with a request. It also gets you 52 points, and no further, because slot 4 is still empty.</p>
+        <div class="prompt-box good">
+          <span class="label">Round 2 · reader, decision, ask</span>
+          <p>"Reader: our CFO, who approved the education plan in March and has not seen the new customer research. Decision: ship on the original date with the integration assumption untested, or slip four weeks while engineering settles it. Ask: reply by Thursday with ship or slip. Open with the decision, not with background. Under 150 words."</p>
+        </div>
+        <p><strong>Round 3 - supply the facts.</strong> Twenty minutes of finding out, then five numbers pasted in. This is the round that changes the piece from an organised opinion into something a CFO can decide on.</p>
+        <div class="prompt-box good">
+          <span class="label">Round 3 · the same brief plus slot 4</span>
+          <p>"Same brief. Use only these facts and do not add any others: the proposal has slipped two weeks; the decision is needed Thursday; academic procurement runs 6 to 12 months, so a four-week slip can cost a full cycle; 31 institutions are in the current pipeline; 48 customer samples moved the buyer from IT to academic budgets. If you need a fact I have not given you, write [MISSING] instead of estimating."</p>
+        </div>
+        <p>That last instruction is the cheapest safety net in this whole course. A model will honour it, and every [MISSING] in the output is a question you were about to answer with filler.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The follow-up that works, and the one that does not<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The difference between these two messages is about ten minutes of your life and roughly thirty points of clarity.</p>
+        <div class="prompt-box bad">
+          <span class="label">Iterating on the draft</span>
+          <p>"This is close but can you make it better? Punchier, more confident, and maybe tighten the middle section a bit."</p>
+        </div>
+        <div class="prompt-box good">
+          <span class="label">Iterating on the brief</span>
+          <p>"The draft is vague because I did not give you the numbers. Here are the three you were missing: 31 institutions in pipeline, 6 to 12 month procurement cycle, 48 customer samples. Rewrite using these. Keep my structure and my sentence order, replace every vague quantity with the real figure, and delete any sentence that now repeats one of them."</p>
+        </div>
+        <p>Note what the good version is actually doing. It names the diagnosis, supplies the missing input, and constrains the rewrite so the model cannot wander off and re-flatten the voice while it is in there. "Make it better" gives it none of that, so it does the only thing it can do with no new information: it adds words. That is the mechanism behind the anti-lever - from a finished 98, "sound more professional" costs you <strong>36 points</strong> and adds 42 words, because with nothing new to say, more professional can only mean more hedged.</p>
+      </div>
+    </details>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brief-first is one pass to a sent piece. Draft-first loops between a fluent draft and make-it-better nudges, which is a dead end.">
+        <style>
+          .bfT { font: 700 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .bfS { font: 400 11px Inter, sans-serif; fill: #FFFFFF; opacity: .93; }
+          .bfA { font: 700 12px Inter, sans-serif; fill: #6B7480; }
+          .bfF { font: 700 12.5px Inter, sans-serif; fill: #991B1B; }
+          .bfG { font: 400 11px Inter, sans-serif; fill: #991B1B; }
+          .bfD { font: 700 12px Inter, sans-serif; fill: #991B1B; }
+          .bfN { font: 600 13px Inter, sans-serif; fill: #101A24; }
+          .bfW { stroke: #B04A2F; stroke-width: 2.5; fill: none; marker-end: url(#bfHd); }
+          .bfR { stroke: #991B1B; stroke-width: 2.5; fill: none; stroke-dasharray: 6 4; marker-end: url(#bfHr); }
+        </style>
+        <defs>
+          <marker id="bfHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#B04A2F"/>
+          </marker>
+          <marker id="bfHr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+
+        <text class="bfA" x="24" y="30">BRIEF FIRST - ONE PASS</text>
+        <rect x="24" y="44" width="180" height="52" rx="8" fill="#7A2E1B"/>
+        <text class="bfT" x="38" y="66">1 · FIVE-SLOT BRIEF</text>
+        <text class="bfS" x="38" y="84">90 seconds of thinking</text>
+
+        <rect x="228" y="44" width="180" height="52" rx="8" fill="#B04A2F"/>
+        <text class="bfT" x="242" y="66">2 · DRAFT</text>
+        <text class="bfS" x="242" y="84">already has the ask</text>
+
+        <rect x="432" y="44" width="180" height="52" rx="8" fill="#C96A4A"/>
+        <text class="bfT" x="446" y="66">3 · CUT</text>
+        <text class="bfS" x="446" y="84">delete the ritual</text>
+
+        <rect x="636" y="44" width="180" height="52" rx="8" fill="#24282E"/>
+        <text class="bfT" x="650" y="66">4 · SENT, AND OWNED</text>
+        <text class="bfS" x="650" y="84">98 on the ladder</text>
+
+        <path class="bfW" d="M204,70 L224,70"/>
+        <path class="bfW" d="M408,70 L428,70"/>
+        <path class="bfW" d="M612,70 L632,70"/>
+
+        <text class="bfA" x="24" y="140">DRAFT FIRST - THE EXPENSIVE LOOP</text>
+        <rect x="24" y="154" width="180" height="52" rx="8" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="bfT" x="38" y="176" fill="#24282E">1 · VAGUE REQUEST</text>
+        <text class="bfS" x="38" y="194" fill="#6B7480">"write me an update"</text>
+
+        <rect x="228" y="154" width="180" height="52" rx="8" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/>
+        <text class="bfT" x="242" y="176" fill="#24282E">2 · FLUENT DRAFT</text>
+        <text class="bfS" x="242" y="194" fill="#6B7480">reads fine, says little</text>
+
+        <rect x="432" y="154" width="180" height="52" rx="8" fill="#ECF0F5" stroke="#33475C" stroke-width="1.5"/>
+        <text class="bfT" x="446" y="176" fill="#24282E">3 · MAKE IT BETTER</text>
+        <text class="bfS" x="446" y="194" fill="#6B7480">nudge the words</text>
+
+        <rect x="636" y="154" width="180" height="52" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="bfF" x="650" y="176">4 · STILL VAGUE</text>
+        <text class="bfG" x="650" y="194">longer, not clearer</text>
+
+        <path class="bfW" d="M204,180 L224,180"/>
+        <path class="bfW" d="M408,180 L428,180"/>
+        <path class="bfW" d="M612,180 L632,180"/>
+        <path class="bfR" d="M726,206 C726,240 522,240 522,210"/>
+        <text class="bfD" x="308" y="262">DEAD END - you are editing a draft whose brief was never written</text>
+
+        <rect x="24" y="284" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="bfN" x="48" y="296">Each trip round the loop costs minutes and adds words. Neither of those is what you wanted.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one pass from a brief, versus the nudge loop that cannot converge</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Prove it in the lab <span class="tag demo">★ 13 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">This is the session's argument, computed. Start from nothing, turn on <strong>Brief</strong> by itself, and watch how little it buys: <strong>48 to 52</strong>. Then build up to a real brief with facts in it and watch the specifics row climb to <strong>83</strong>. The point of doing it in this order is to feel the difference between organising your vagueness and removing it.</p>
+
+    <div class="steps">
+      <div class="step"><p>All levers off: <strong>48/100, 223 words</strong>. Find the specifics row and note it is at the floor. Read the draft and notice how reasonable it sounds anyway.</p></div>
+      <div class="step"><p>Turn on <strong>Brief</strong> alone: <strong>52</strong>. Read the new opening - the point has moved up and there is an ask at the bottom. Now read the middle. "A number of institutions" is still there, because you gave it slots 1 to 3 and not slot 4.</p></div>
+      <div class="step"><p>Add <strong>Voice sample</strong> (68) and <strong>Structure</strong> (70). Two rungs, no new information - the register and the shape improved, and the piece still cannot be acted on.</p></div>
+      <div class="step"><p>Now add <strong>Specifics</strong>: <strong>83</strong>. Watch the specifics row climb as 31 institutions, 48 samples, two weeks and Thursday arrive. Thirteen points from one slot.</p></div>
+      <div class="step"><p>Finish with <strong>Cut</strong> for <strong>98 at 102 words</strong>, then press <strong>Sound more professional</strong> and watch the numbers go back out again - <strong>62</strong>, and 42 words heavier.</p></div>
+    </div>
+
+    <div class="wlbox" data-mode="lab" data-levers=""></div>
+
+    <div class="callout tip">
+      <strong>What is written and what is measured</strong>
+      The drafts are written examples - one good version, plus one specific kind of damage for each missing practice. Every number in the scorecard is computed from the text above it: hedge and AI-tell counts against real word lists, passive hits by pattern, sentence-length spread, nominalisation density with a whitelist so ordinary words like "evidence" and "institutions" are not punished, a real Flesch-Kincaid grade with syllable counting, and the share of sentences carrying a number or a name. The passive check is a heuristic - a be-verb followed by a participle - so read its count as a flag, not a census.
+    </div>
+
+    <div class="callout win">
+      <strong>★ The line to remember from this session</strong>
+      Brief without facts is worth 4 points. Facts on top of a brief are worth 13. The slot that takes real time is the slot that pays, and there is no prompt that substitutes for going and finding out.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-40 min total</span></h2>
+    </div>
+    <ul>
+      <li>Write a five-slot brief for one real piece of writing you owe someone. Time yourself. If it takes longer than three minutes, the slot that is slowing you down is the one telling you something.</li>
+      <li>Run the five tests on that brief. Be strict about slot 2: if your decision sentence contains the word "aware", find the real decision or drop the piece.</li>
+      <li>Take a draft a model wrote for you recently and mark every unfalsifiable quantity - a fair amount, several, considerably, in the near term. Count them. That count is the number of facts you did not supply.</li>
+      <li>Try the [MISSING] instruction on your next request: "if you need a fact I have not given you, write [MISSING] rather than estimating." Bring the list of [MISSING]s to b3 - it is usually the most honest document of the week.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This session teaches the brief as the plain-language tradition frames it - reader first, purpose named, one action requested - with the clarity lab measuring the result live. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The five slots: reader, decision, ask, facts, register</span><span class="note">Part 1 · one specificity test per slot, with the lab row each one moves</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Plausible vagueness, and why it survives review</span><span class="note">Part 2 · the mechanism, plus the 48 to 52 rung as the proof</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Specifics as the measure that changes behaviour fastest</span><span class="note">Part 2 + the lab · the 70 to 83 rung, worth 13 points</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Plain-language principles - point first, one ask, concrete nouns</span><span class="note">Applied inside the brief here · practised on real formats in b4 and b5</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Register and voice capture</span><span class="note">Named as slot 5 and filled roughly tonight · built properly in b3</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Which of these actually fills the reader slot?</p>
+      <button class="qopt" type="button">A · "The exec team, in a professional but friendly tone"</button>
+      <button class="qopt" type="button">B · "Our CFO, who approved the plan in March and has not seen the 48 samples"</button>
+      <button class="qopt" type="button">C · "Senior stakeholders who need to understand the current situation"</button>
+      <p class="qwhy">The slot wants a person plus one thing they already believe that you are about to change. B gives you both, which tells you what to leave out and which fact leads. A mixes in register, and C is the awareness trap wearing a job title.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · You do not supply the numbers. What does the model do with the gap?</p>
+      <button class="qopt" type="button">A · Leaves a blank or asks you for the figure</button>
+      <button class="qopt" type="button">B · Writes an obviously wrong number that a reviewer will catch</button>
+      <button class="qopt" type="button">C · Writes "a fair amount" or "considerably longer than anticipated" - fluent, unfalsifiable, and it reads as information</button>
+      <p class="qwhy">A gap is not a fluent continuation, so it produces the most probable phrase that fits an update. This is worse than an obvious error, because there is nothing for a reviewer to point at - it passes review and quietly hands the checking work to your reader.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The draft came back vague. What is the move?</p>
+      <button class="qopt" type="button">A · Go back to the brief, name the empty slot, and supply what was missing</button>
+      <button class="qopt" type="button">B · Ask for a punchier, more confident version of the draft</button>
+      <button class="qopt" type="button">C · Ask it to sound more professional, then cut it yourself</button>
+      <p class="qwhy">A wrong draft is a symptom, and usually of one empty slot. Nudging the words gives the model no new information, so it does the only thing it can - it adds. That is the same mechanism as the anti-lever, which costs 36 points and 42 extra words from a finished draft.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Writer session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The five slots</b><span>Reader · decision · ask · facts · register. Ninety seconds, and it is thinking you owed anyway.</span></div>
+      <div class="cheat-item"><b>Reader test</b><span>Name the person, and one thing they already believe that you are about to change.</span></div>
+      <div class="cheat-item"><b>Decision test</b><span>Finish "after reading this they will ______" without the word "aware". If you cannot, do not send it.</span></div>
+      <div class="cheat-item"><b>Ask test</b><span>One action, one date, doable today without asking you a question. "Reply Thursday with ship or slip."</span></div>
+      <div class="cheat-item"><b>Facts test</b><span>Could a reader check every claim? If you cannot fill this slot, the writing is not ready - the finding-out is.</span></div>
+      <div class="cheat-item"><b>Plausible vagueness</b><span>No facts means filler, not blanks: a fair amount, several, in the near term. It survives review.</span></div>
+      <div class="cheat-item"><b>The two rungs</b><span>Brief with no facts: 48 to 52, worth 4. Facts on top: 70 to 83, worth 13. The slow slot pays.</span></div>
+      <div class="cheat-item"><b>The loop rule</b><span>Draft wrong? Change the brief, not the draft. And add: "write [MISSING] rather than estimating."</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Writer session 2 of 10 · learn-ai-writing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b1-writers-ai-loop.html">← Previous: The writer's AI loop</a> &nbsp;·&nbsp; <a href="b3-your-voice-captured.html">Next: Your voice, captured →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/write-live.js?v=1"></script>
+<script src="../assets/app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 1 · What changed in how work gets written - learn ai writing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-writing-with-phoebe</a> / Leader session 1 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Writing with Phoebe · Leader track · Session 1 of 6</div>
+    <h1>What changed in <span class="accent">how work gets written</span></h1>
+    <p class="sub">You have been approving writing for years, and the thing you were trained to catch has almost disappeared. Clumsy prose is close to extinct in your inbox. What replaced it is worse for you specifically: writing that is warm, grammatical, correctly structured and carries nothing you can act on. It passes review because an absence is not an error you can circle. This session gives you the picture that the rest of the leader track hangs on, an honest account of which parts of the writing week actually got faster, and three things your team quietly loses if nobody names the shift out loud.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Leader track</span>
+      <span class="chip audience">Managers · editors · anyone who approves writing</span>
+      <span class="chip audience">No tools required</span>
+      <span class="chip time">Start here</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-20 · The new failure mode</span>
+      <span class="a3" style="flex:4">20-38 · Where the writing week went</span>
+      <span class="a4" style="flex:2">38-45 · What you lose · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>How the leader track works</h2>
+    </div>
+    <p class="lede">Six sessions for the person whose job is to <strong>approve</strong> writing rather than produce it. There is a ten-session writer track running alongside this one, and you do not need it - but your team does, and this track is built so the two meet. One running case throughout: you are managing inside <strong>Cadence</strong>, an AI meeting-notes company, through a week where the education proposal slips, the evidence changes who the buyer actually is, one technical assumption turns out to be untested, and a decision is needed on Thursday. Tonight is the diagnosis. <strong>a2</strong> is the review standard: how to read a document a model touched, and the two checks that send a draft back instead of editing it. <strong>a3</strong> is the house voice, written down as samples rather than adjectives. <strong>a4</strong> is disclosure and over-reliance: where disclosure is already mandatory, where the bodies disagree, and why your team needs a written rule rather than a vibe. <strong>a5</strong> is the one-page team standard you will actually publish. <strong>a6</strong> is raising the bar: what to measure, what to stop doing, and which review step to delete.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live clarity lab - toggle levers, watch the real score</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      One picture you can draw on a whiteboard from memory - the two-axis quadrant that explains why your review process stopped working. A defensible answer to "so did AI make us faster?" that does not oversell or sulk. And three named losses you can watch for in your own team next week, one of which has real evidence behind it. From a2 onward you also get the writer track's clarity lab, where a draft climbs <strong>48 to 98</strong> while its word count falls from 223 to 102.
+    </div>
+    <div class="callout tip">
+      <strong>What this course leaves to its neighbours</strong>
+      Marketing and publishing content belongs to <em>AI + Content</em>. Documentation, API references and release notes belong to <em>Tech Writing</em>. Prompting as a discipline in its own right belongs to <em>Prompt Engineering</em>. This course owns the writing your people are personally accountable for at work - emails, updates, proposals, reports, reviews, difficult messages - and the fact that a voice has to survive the tool. If a question in the room is really about a landing page or a doc site, park it and point at the neighbour.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE FAILURE MODE CHANGED ============ -->
+  <section class="section" id="failure-mode">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the spine of the track</span>
+      <h2>The failure mode changed <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Every reviewing instinct you have was trained on writing that <em>looks</em> wrong. Tangled sentences, a paragraph that never lands, a typo in the customer's name. That category is nearly extinct, and you should be glad: it was genuinely bad and it is genuinely gone. What arrived in its place is prose that is fluent, courteous, well-organised and <strong>empty</strong>. It does not trip any of your alarms, because your alarms are wired to errors, and an absence is not an error. Put fluency on one axis and substance on the other and the whole problem becomes a picture you can point at in a meeting.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two axes of writing quality: fluency across and substance up. Four quadrants, with fluent-and-empty named as the new default and the hardest for reviewers to catch.">
+        <style>
+          .aqA { font: 700 12px Inter, sans-serif; fill: #6B7480; }
+          .aqH { font: 700 13.5px Inter, sans-serif; fill: #FFFFFF; }
+          .aqS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .93; }
+          .aqI { font: 700 13.5px Inter, sans-serif; fill: #24282E; }
+          .aqX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .aqN { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <text class="aqA" x="40" y="30">↑ SUBSTANCE - is there anything here a reader can act on?</text>
+        <text class="aqA" x="40" y="396">FLUENCY - does it read well? →</text>
+
+        <rect x="40" y="46" width="380" height="140" rx="10" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="aqI" x="58" y="74">Clumsy but substantial</text>
+        <text class="aqX" x="58" y="100">Real numbers, a real ask, awkward sentences.</text>
+        <text class="aqX" x="58" y="120">The old normal, and cheap to fix: the thinking</text>
+        <text class="aqX" x="58" y="140">is already done, so a reviewer repairs it in</text>
+        <text class="aqX" x="58" y="160">about five minutes.</text>
+
+        <rect x="440" y="46" width="400" height="140" rx="10" fill="#33475C"/>
+        <text class="aqH" x="458" y="74">Fluent and substantial - the target</text>
+        <text class="aqS" x="458" y="100">Specific, short, sounds like a person who has</text>
+        <text class="aqS" x="458" y="120">decided something, and the reader knows what</text>
+        <text class="aqS" x="458" y="140">to do next.</text>
+        <text class="aqS" x="458" y="166">Reached by direction and cutting, not prompting.</text>
+
+        <rect x="40" y="202" width="380" height="140" rx="10" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="aqI" x="58" y="230">Clumsy and empty</text>
+        <text class="aqX" x="58" y="256">Rare now, and the least dangerous of the four:</text>
+        <text class="aqX" x="58" y="276">everyone can see it is not finished, so it gets</text>
+        <text class="aqX" x="58" y="296">sent back before it reaches a customer.</text>
+        <text class="aqX" x="58" y="322">Visible failure is a solved problem.</text>
+
+        <rect x="440" y="202" width="400" height="140" rx="10" fill="#B04A2F"/>
+        <text class="aqH" x="458" y="230">Fluent and empty - the new default</text>
+        <text class="aqS" x="458" y="256">Warm, grammatical, 200 words, nothing to act</text>
+        <text class="aqS" x="458" y="276">on. It passes review because an absence is not</text>
+        <text class="aqS" x="458" y="296">an error you can circle.</text>
+        <text class="aqS" x="458" y="322">This box is the spine of the whole leader track.</text>
+
+        <rect x="40" y="356" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="aqN" x="64" y="368">Your job moved: from making prose readable to making sure it says something checkable.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the four quadrants, and the one your review process was never built for</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why the empty quadrant survives your review<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Reviewing is a pattern-matching job, and every pattern you hold is a <strong>positive</strong> one: something is present that should not be. A comma splice. A number that contradicts the table. A tone that will land badly with the client. Fluent emptiness offers you none of those. Read it again and it stays reasonable. Read it a third time and you start to suspect yourself.</p>
+        <ul>
+          <li><strong>There is nothing to circle.</strong> You can put a line under a tangled sentence. You cannot put a line under a missing number, because there is nowhere to put it.</li>
+          <li><strong>Politeness does a lot of work.</strong> A draft that thanks the reader, acknowledges the complexity and promises to follow up feels considerate rather than evasive.</li>
+          <li><strong>Length reads as effort.</strong> Two hundred careful words look like someone tried. One vague sentence looks lazy. The two contain the same amount of information.</li>
+          <li><strong>The cost lands on someone else.</strong> The reader burns ten minutes and still has to ask. That cost never shows up in your review, so it never gets attributed to the draft.</li>
+        </ul>
+        <p>This is why a2 exists. The whole review standard is a device for turning an absence into something nameable, because a name is the only form a reviewer can act on and the only form a writer can fix.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The sentence to stop saying in reviews<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>"It feels a bit long."</strong> You have said it this month. It is almost always true and almost always the wrong diagnosis, and it teaches the writer to trim adjectives instead of going to find a fact.</p>
+        <p>A piece that says nothing has to keep talking. It has no facts to anchor it, so it circles, restates its opening in its closing paragraph, and pads the middle with the kind of sentence that could appear in any document about anything. Ask for it to be shorter and you get the same emptiness at 60% scale. Ask what the reader is supposed to decide, and the padding loses its excuse.</p>
+        <p>Two better sentences, both of which you will practise in a2: <em>"I cannot find the ask"</em> and <em>"two of these nine sentences carry a number."</em> Neither is a style opinion. Both are checkable in front of the writer, which means neither turns into a debate about taste.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: WHERE THE WRITING WEEK WENT ============ -->
+  <section class="section" id="the-week">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · what actually got faster</span>
+      <h2>Where the week's writing time goes, and what moved <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Here is the honest version, and I want to be explicit about how I am arguing it: <strong>this is an argument from mechanism, not from a survey.</strong> I have no trustworthy figure for how much of your team's writing is now model-assisted, so I am not going to invent one, and you should be suspicious of anyone who quotes you a tidy percentage. What I can argue is structural. Writing at work is five steps. Exactly one of them is a text-production problem, and a text generator collapsed it from twenty minutes to four seconds. The other four are decision problems, judgement problems and accountability problems, and none of them got a tool.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 356" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five-step writing loop at manager altitude: decide, brief, draft, cut, own. Only step three collapsed in cost; deciding, cutting and being accountable did not compress.">
+        <style>
+          .mlT { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .mlS { font: 400 11px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .mlI { font: 700 13px Inter, sans-serif; fill: #24282E; }
+          .mlX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .mlN { font: 600 13px Inter, sans-serif; fill: #101A24; }
+          .mlWire { stroke: #B04A2F; stroke-width: 2.5; fill: none; marker-end: url(#mlHd); }
+        </style>
+        <defs>
+          <marker id="mlHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#B04A2F"/>
+          </marker>
+        </defs>
+
+        <text class="mlX" x="24" y="34">The five steps behind every document you approve</text>
+
+        <rect x="24" y="52" width="146" height="52" rx="8" fill="#7A2E1B"/>
+        <text class="mlT" x="38" y="73">1 · DECIDE</text>
+        <text class="mlS" x="38" y="91">what is it for?</text>
+
+        <rect x="196" y="52" width="146" height="52" rx="8" fill="#B04A2F"/>
+        <text class="mlT" x="210" y="73">2 · BRIEF</text>
+        <text class="mlS" x="210" y="91">reader, ask, facts</text>
+
+        <rect x="368" y="52" width="146" height="52" rx="8" fill="#C96A4A"/>
+        <text class="mlT" x="382" y="73">3 · DRAFT</text>
+        <text class="mlS" x="382" y="91">now nearly free</text>
+
+        <rect x="540" y="52" width="146" height="52" rx="8" fill="#B04A2F"/>
+        <text class="mlT" x="554" y="73">4 · CUT</text>
+        <text class="mlS" x="554" y="91">still a human job</text>
+
+        <rect x="712" y="52" width="146" height="52" rx="8" fill="#24282E"/>
+        <text class="mlT" x="726" y="73">5 · OWN</text>
+        <text class="mlS" x="726" y="91">still your name</text>
+
+        <path class="mlWire" d="M170,78 L192,78"/>
+        <path class="mlWire" d="M342,78 L364,78"/>
+        <path class="mlWire" d="M514,78 L536,78"/>
+        <path class="mlWire" d="M686,78 L708,78"/>
+
+        <rect x="368" y="132" width="146" height="26" rx="6" fill="#FDF1EC" stroke="#C96A4A" stroke-width="2"/>
+        <text class="mlI" x="382" y="150">ONLY THIS ONE</text>
+        <path class="mlWire" d="M441,130 L441,110"/>
+
+        <rect x="24" y="192" width="300" height="76" rx="10" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="mlI" x="42" y="218">WHAT A MANAGER OWNS</text>
+        <text class="mlX" x="42" y="238">deciding it was worth writing at all,</text>
+        <text class="mlX" x="42" y="256">and to whom, and by when</text>
+
+        <rect x="340" y="192" width="190" height="76" rx="10" fill="#FDF1EC" stroke="#C96A4A" stroke-width="2"/>
+        <text class="mlI" x="356" y="218">STEP 3 COLLAPSED</text>
+        <text class="mlX" x="356" y="238">the expensive step</text>
+        <text class="mlX" x="356" y="256">became the cheap one</text>
+
+        <rect x="546" y="192" width="312" height="76" rx="10" fill="#ECF0F5" stroke="#33475C" stroke-width="2"/>
+        <text class="mlI" x="562" y="218">WHAT DID NOT COMPRESS</text>
+        <text class="mlX" x="562" y="238">cutting, checking the facts, and being</text>
+        <text class="mlX" x="562" y="256">accountable for having sent it</text>
+
+        <rect x="24" y="300" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="mlN" x="48" y="312">Making the cheap step cheaper does not make the week shorter. It moves the queue to step 4.</text>
+        <rect x="24" y="324" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="mlN" x="48" y="336">Argued from mechanism, not from survey data. Be honest about that when you present it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the five steps at manager altitude, and the single one a model helps with</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>What "we got faster at writing" actually means<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Two things are true at once, and a manager who only holds one of them will make a bad call.</p>
+        <ul>
+          <li><strong>Step 3 really did collapse.</strong> Nobody should be nostalgic about staring at a blank page for forty minutes. Blank-page paralysis was a real tax and it is largely gone. That is a genuine win and you should say so out loud, or your team will assume you are anti-tool and stop telling you how they work.</li>
+          <li><strong>The queue moved rather than shortened.</strong> If drafting cost most of the effort and drafting is now free, then the binding constraint is whatever is next in line - and what is next in line is cutting, verifying, and someone deciding they are willing to put their name on it. Those are the steps that show up in <em>your</em> calendar.</li>
+        </ul>
+        <p>The failure mode for leaders is to bank the step-3 saving as a headcount or timeline argument, then act surprised when review time goes up. Volume rises because producing text is cheap. Each document costs more to approve because more of them arrive with nothing decided. That is not a tooling problem and no upgrade fixes it.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The Thursday decision at Cadence<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Here is the case in one paragraph, because it recurs in every session. The education proposal has slipped. New evidence from the field suggests the real buyer is not the head of department you have been writing to but the procurement lead who has never heard of you. One technical assumption underneath the pricing was never tested. A decision is needed on <strong>Thursday</strong>.</p>
+        <p>Four people send you writing about this during the week. All four documents are fluent. Two of them do not say what they want you to decide. One of them describes the untested assumption as "an area we are continuing to explore," which is a sentence with a person hiding inside it. None of them are badly written by the standards you were trained on.</p>
+        <p>Notice what your job is in that week: not improving prose. Working out, fast, which of these four documents contains a decision and which three contain a description of a situation. a2 gives you the seven-check pass that does that in about a minute.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: WHAT A MANAGER LOSES ============ -->
+  <section class="section" id="what-you-lose">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the quiet costs</span>
+      <h2>Three things you lose if nobody names the shift <span class="tag concept">10 min live · open all three</span></h2>
+    </div>
+    <p class="lede">None of these announce themselves. There is no incident, no angry customer, no dashboard turning red. They are all slow, and two of them have real evidence behind them that I want you to be able to cite accurately, because the version people repeat in meetings is usually wrong.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Loss 1 · Your reviewers stop catching anything<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A review step survives in an organisation because it catches things. When the thing it was built to catch stops arriving, the step does not get deleted - it keeps running and starts producing comments about commas.</p>
+        <p>Watch for the signature: review threads where every comment is about wording, none is about whether the document has an ask, and the piece ships on time with everyone reasonably satisfied. That is a review process that has quietly become a ritual. Your reviewers are not lazy. They are doing exactly what they were trained to do, on a problem that no longer exists.</p>
+        <p>The fix is not more review. It is a <strong>different</strong> check, applied earlier, that names absences rather than errors - and a rule about which absences send a draft back instead of getting fixed in the margin. That is a2, and it is the highest-leverage forty-five minutes in this track.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Loss 2 · Junior writers stop developing judgement<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Drafting from scratch is unpleasant, slow, and the main way anyone learns to think in prose. If your least experienced writers never do it, they get fluent output on day one and stop climbing. You will not notice for a year, and then you will notice all at once, when someone needs to write something no model can help with.</p>
+        <p>There is direct evidence here. <strong>Anderson, Shah &amp; Kreminski, "Homogenization Effects of Large Language Models on Human Creative Ideation," C&amp;C 2024 (DOI 10.1145/3635636.3656204)</strong> ran 36 participants: with ChatGPT, different users produced <strong>less semantically distinct ideas</strong> than with another creativity-support tool, while producing more of them - and they felt <strong>less ownership</strong> of those ideas.</p>
+        <p>For a writing course, the ownership finding is the one that matters. More output, less distinct, and the person does not feel it is theirs. Ownership is not a soft outcome in writing - it is the thing that makes someone check a number twice, argue with a stakeholder about a claim, and refuse to send a paragraph they cannot defend. A writer who does not feel ownership will not fight for a sentence, and step 5 of the loop is exactly that fight.</p>
+        <p>What to do about it is a management choice, not a policy: decide which pieces are training pieces and say so explicitly. a6 goes at protecting drafting time properly.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Loss 3 · Everything starts to sound the same<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The third loss is the one you feel before you can name it: your team's writing converges. Not on something bad, exactly - on one competent, agreeable, mid-register voice. A team whose documents are indistinguishable from each other has lost information, because register carries meaning. You could once tell from two sentences whether an update came from the engineer who understates everything or the account lead who does not.</p>
+        <p>The evidence to cite carefully: <strong>Doshi &amp; Hauser, "Generative AI enhances individual creativity but reduces the collective diversity of novel content," <em>Science Advances</em> 10(28), eadn5290, 12 July 2024</strong> - 293 writers, 600 evaluators, 3,519 evaluations. Individual story novelty rose <strong>5.4%</strong> with one AI idea and <strong>8.1%</strong> with five. The <strong>least creative writers gained the most</strong> (novelty +10.7%, usefulness +11.5% in the five-idea condition). And stories became <strong>measurably more similar to one another</strong> within a condition.</p>
+        <p>Say that last part exactly that way. The paper's similarity figures are expressed as a share of the total range of a similarity coefficient, so "stories were 10.7% more similar" is not a claim the paper makes and quoting it that way will get you corrected by the one person in the room who read it. "Measurably more similar to one another, per Doshi and Hauser" is both accurate and sufficient.</p>
+        <p>The management reading is genuinely two-sided: your weakest writers get better, and your collective range narrows. If you only manage the average you will be delighted. a3 is how you keep the range - a house voice captured as samples rather than adjectives.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What to say to the team on Monday<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>You cannot manage a shift nobody has named, and the naming has to come from you or it arrives as a rumour that you are anti-tool. Four sentences, in this order, are enough:</p>
+        <ul>
+          <li><strong>Say the win first.</strong> Drafting got cheap and staring at a blank page is not a skill anyone should have to demonstrate. If you skip this, everything after it reads as disapproval and people stop telling you how they actually work.</li>
+          <li><strong>Say what did not get cheaper.</strong> Deciding what a document is for, cutting it, and being willing to put your name on it. Those are the same as they were and they are still the job.</li>
+          <li><strong>Say what you will now ask for.</strong> The ask, up front, and the numbers. Not a tool policy, not a disclosure form - two questions you will ask about every document from now on. That is a2 in one line.</li>
+          <li><strong>Say what you will not ask.</strong> You are not going to ask whether a model helped, because you cannot tell and it is the wrong question. Saying this out loud removes a fear people are carrying quietly and will not raise.</li>
+        </ul>
+        <p>a5 turns those four sentences into a one-page standard you publish. Tonight the point is smaller: the shift is real, it is nobody's fault, and it is now a named thing your team is allowed to talk about.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>People do not check the output, and we have a number for it.</strong> The Nielsen Norman Group ran a two-week diary study on generative AI use, published <strong>24 September 2023</strong>: 18 participants, 425 logged conversations. Only <strong>22.43%</strong> of those conversations were followed by any verification at all. Read that as a manager rather than as a scold. It is not that your people are careless - it is that fluent output does not <em>feel</em> like it needs checking, in the same way a confident colleague does not feel like they need checking. Verification is a habit that has to be designed into a process, because nothing in the reading experience will prompt it. a4 goes at over-reliance properly, and a5 turns it into a line in the team standard.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 25-35 min total</span></h2>
+    </div>
+    <ul>
+      <li>Pull the last three documents you approved. Put each one in a quadrant, and be honest about the fluent-and-empty box. Bring the count to a2.</li>
+      <li>For each of the three, try to write the ask in one sentence <strong>without reopening the document</strong>. If you cannot, that is the finding, and it is about the document rather than your memory.</li>
+      <li>Count specifics on one of them: how many sentences carry a number or a name? Divide by the sentence count. Under a third and the risks in that document are reading as feelings.</li>
+      <li>Ask one junior writer how they drafted their last piece. Do not evaluate, do not hint, just record what they say. This is your baseline for the ownership question in Loss 2, and you cannot get it later.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This track teaches the working core of the plain-language and editing tradition at manager altitude, plus the current published evidence on homogenisation and over-reliance, plus the disclosure rules that already exist. Where a number does not exist, the page argues from mechanism and says so. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The fluent-and-empty quadrant, and why review processes miss it</span><span class="note">Part 1 · becomes the review standard in a2</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Anderson, Shah &amp; Kreminski, C&amp;C 2024 - 36 participants, less semantically distinct ideas and less ownership</span><span class="note">Part 3, Loss 2 · the ownership finding is the load-bearing one</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Doshi &amp; Hauser, Science Advances 10(28) eadn5290, 2024 - novelty +5.4% and +8.1%, least creative writers gained most, output measurably more similar</span><span class="note">Part 3, Loss 3 · with the caveat on the similarity figures stated in full</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Nielsen Norman Group diary study, 24 Sept 2023 - 18 participants, 425 conversations, 22.43% followed by verification</span><span class="note">Named in the example callout · over-reliance is taught in a2 and a4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Where the writing week goes, argued from mechanism rather than survey data</span><span class="note">Part 2 · stated explicitly as an argument, because no trustworthy adoption figure exists here</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Which quadrant is your existing review process least likely to catch?</p>
+      <button class="qopt" type="button">A · Clumsy and empty - nobody wants to read it closely enough to find the problem</button>
+      <button class="qopt" type="button">B · Clumsy but substantial - the sentences are hard to follow, so the facts get missed</button>
+      <button class="qopt" type="button">C · Fluent and empty - the failure is an absence, and an absence is not an error you can circle</button>
+      <p class="qwhy">Clumsy work is visible, which makes it safe: it gets sent back. Fluent emptiness reads as considerate and thorough, offers nothing to point at, and ships. That is why the rest of the track is about naming absences rather than finding errors.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Drafting collapsed in cost. Which parts of the writing loop did not compress?</p>
+      <button class="qopt" type="button">A · Deciding what the message is for, cutting, and being accountable for having sent it</button>
+      <button class="qopt" type="button">B · Briefing, because a model can now write its own brief from the draft</button>
+      <button class="qopt" type="button">C · None of them - all five steps got faster by roughly the same amount</button>
+      <p class="qwhy">Only step 3 is a text-production problem. Deciding is a judgement problem, cutting is a taste-and-priority problem, owning is an accountability problem. Making the cheap step cheaper moves the queue rather than shortening the week - which is why your review time goes up rather than down.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · In Anderson, Shah &amp; Kreminski (C&amp;C 2024), which finding matters most for a writing team?</p>
+      <button class="qopt" type="button">A · Participants produced fewer ideas in total when using ChatGPT</button>
+      <button class="qopt" type="button">B · Participants produced less semantically distinct ideas and felt less ownership of them</button>
+      <button class="qopt" type="button">C · Participants' ideas were rated as 10.7% more similar to each other</button>
+      <p class="qwhy">They produced more ideas, not fewer - less distinct, and with less ownership. Ownership is the one to hold onto: it is what makes a writer check a number twice and defend a sentence. Option C is the misquote to avoid, and it belongs to a different paper anyway.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The quadrant</b><span>Fluency across, substance up. Fluent-and-empty is the new default and the one review was never built for.</span></div>
+      <div class="cheat-item"><b>Why it survives</b><span>An absence is not an error you can circle. Politeness reads as care and length reads as effort.</span></div>
+      <div class="cheat-item"><b>The five steps</b><span>Decide, brief, draft, cut, own. Only step 3 collapsed. The queue moved to cutting and owning.</span></div>
+      <div class="cheat-item"><b>Say it honestly</b><span>Argued from mechanism, not survey data. Quote no adoption percentage you cannot source.</span></div>
+      <div class="cheat-item"><b>Loss 1</b><span>Reviewers stop catching anything, then start commenting on commas. Ritual, not review.</span></div>
+      <div class="cheat-item"><b>Loss 2</b><span>Anderson, Shah &amp; Kreminski, C&amp;C 2024: 36 people, less distinct ideas, less ownership. Ownership is the finding.</span></div>
+      <div class="cheat-item"><b>Loss 3</b><span>Doshi &amp; Hauser 2024: novelty +5.4% and +8.1%, weakest writers gain most, output measurably more similar to one another.</span></div>
+      <div class="cheat-item"><b>Over-reliance number</b><span>NN/g, 24 Sept 2023: 18 people, 425 conversations, only 22.43% followed by any verification.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 1 of 6 · learn-ai-writing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="a2-reading-ai-writing.html">Next: Reading a document a model touched →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=2"></script>
+</body>
+</html>

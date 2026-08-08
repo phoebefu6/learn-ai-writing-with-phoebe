@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer session 1 · The writer's AI loop - learn ai writing with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-writing-with-phoebe</a> / Writer session 1 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Writing with Phoebe · Writer track · Session 1 of 10</div>
+    <h1>The writer's <span class="accent">AI loop</span></h1>
+    <p class="sub">A model will give you 200 fluent words in four seconds. Fluent was never the hard part. The hard part is being specific, being brief, and sounding like a person who has actually decided something - and a generator is structurally bad at all three, because it has no stake in the outcome and nothing concrete to say. Tonight you get the loop this whole track runs on, and a lab that scores real text on seven measures you can check yourself. The opening draft reads perfectly well and scores <strong>48 out of 100</strong>. By the end of the session you will know exactly why.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Writer track</span>
+      <span class="chip audience">Anyone whose name goes on the writing</span>
+      <span class="chip audience">No tools required</span>
+      <span class="chip time">Start here</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The loop + why fluent is not useful</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: score a real draft</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>How this track works</h2>
+    </div>
+    <p class="lede">Ten sessions on the writing that fills a working week and has <strong>your name on it</strong>: emails, updates, proposals, reports, reviews, the message you have been putting off since Tuesday. One running case - you are writing inside <strong>Cadence</strong>, an AI meeting-notes company, through a week where a proposal slips and a decision is needed. Tonight the loop. b2 is the brief. b3 captures your voice so a model can match it. b4 is emails and messages, b5 updates and memos. b6 is the clarity lab, where tonight's scoring becomes a working habit. b7 is editing, which is the session most people need most. b8 is difficult writing, where I will argue that AI is often the wrong tool rather than a risky one. b9 is long-form. b10 is one real week of your own writing, scored.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live clarity lab - toggle levers, watch the real score</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The five-step loop, the five levers this track turns on one at a time, seven measures you can apply to any draft in about a minute, and one sentence you can use for the rest of your career: fluent is not the same as useful.
+    </div>
+    <div class="callout tip">
+      <strong>What this course leaves to its neighbours</strong>
+      Marketing and publishing writing belongs to <em>AI + Content</em>. Documentation belongs to <em>Tech Writing</em>. Prompting as a discipline in its own right belongs to <em>Prompt Engineering</em>. This course owns the writing you are personally accountable for at work, and the fact that your voice has to survive the tool.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE LOOP ============ -->
+  <section class="section" id="the-loop">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the spine of the track</span>
+      <h2>Decide, brief, draft, cut, own <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Five steps, and the model is genuinely useful in exactly one of them. <strong>Decide</strong>: what do you actually want to happen, and who has to do it? <strong>Brief</strong>: write down the reader, the decision, the ask, the facts and the register. <strong>Draft</strong>: get words on the page, yours or the model's - this is the cheap step. <strong>Cut</strong>: remove everything that is not doing work, which is the step nobody delegates well. <strong>Own</strong>: check the facts, check that it sounds like you, and take responsibility for having sent it. Steps one, four and five are where good writing actually happens, and none of them are a prompting problem.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The writer's AI loop: decide, brief, draft, cut, own - with AI strongest at drafting and weakest at deciding, cutting and owning.">
+        <style>
+          .wlT { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .wlS { font: 400 11px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .wlI { font: 700 13px Inter, sans-serif; fill: #24282E; }
+          .wlX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .wlN { font: 600 13px Inter, sans-serif; fill: #101A24; }
+          .wlWire { stroke: #B04A2F; stroke-width: 2.5; fill: none; marker-end: url(#wlHd); }
+        </style>
+        <defs>
+          <marker id="wlHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#B04A2F"/>
+          </marker>
+        </defs>
+
+        <rect x="24" y="56" width="146" height="52" rx="8" fill="#7A2E1B"/>
+        <text class="wlT" x="38" y="77">1 · DECIDE</text>
+        <text class="wlS" x="38" y="95">what must change?</text>
+
+        <rect x="196" y="56" width="146" height="52" rx="8" fill="#B04A2F"/>
+        <text class="wlT" x="210" y="77">2 · BRIEF</text>
+        <text class="wlS" x="210" y="95">reader, ask, facts</text>
+
+        <rect x="368" y="56" width="146" height="52" rx="8" fill="#C96A4A"/>
+        <text class="wlT" x="382" y="77">3 · DRAFT</text>
+        <text class="wlS" x="382" y="95">the cheap step</text>
+
+        <rect x="540" y="56" width="146" height="52" rx="8" fill="#B04A2F"/>
+        <text class="wlT" x="554" y="77">4 · CUT</text>
+        <text class="wlS" x="554" y="95">half the words</text>
+
+        <rect x="712" y="56" width="146" height="52" rx="8" fill="#24282E"/>
+        <text class="wlT" x="726" y="77">5 · OWN</text>
+        <text class="wlS" x="726" y="95">facts, voice, send</text>
+
+        <path class="wlWire" d="M170,82 L192,82"/>
+        <path class="wlWire" d="M342,82 L364,82"/>
+        <path class="wlWire" d="M514,82 L536,82"/>
+        <path class="wlWire" d="M686,82 L708,82"/>
+        <path class="wlWire" d="M785,108 C785,150 200,150 100,192"/>
+
+        <rect x="368" y="192" width="146" height="52" rx="10" fill="#FDF1EC" stroke="#C96A4A" stroke-width="2"/>
+        <text class="wlI" x="382" y="213">AI HELPS HERE</text>
+        <text class="wlX" x="382" y="231">step 3, and only 3</text>
+
+        <rect x="540" y="192" width="318" height="52" rx="10" fill="#ECF0F5" stroke="#33475C" stroke-width="2"/>
+        <text class="wlI" x="556" y="213">YOU ARE IRREPLACEABLE HERE</text>
+        <text class="wlX" x="556" y="231">deciding, cutting, and being accountable</text>
+
+        <rect x="24" y="192" width="318" height="52" rx="10" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="wlI" x="40" y="213">THE LOOP RUNS BACKWARDS TOO</text>
+        <text class="wlX" x="40" y="231">if cutting is hard, the decision was never made</text>
+
+        <rect x="24" y="286" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="wlN" x="48" y="298">Most bad writing at work is a step-1 failure: nobody decided what the message was for.</text>
+        <rect x="24" y="310" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="wlN" x="48" y="322">If you cannot say the ask in one sentence, no amount of drafting will rescue the piece.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the loop, and the one step a model is actually good at</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The five levers of this track<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The loop is the process. The five levers are the practices, and they are the same five the lab measures - so every session you can watch the number move:</p>
+        <ul>
+          <li><strong>Brief</strong> - the reader, the decision, the ask. Without it the draft opens with a windup and closes without a request. (b2)</li>
+          <li><strong>Voice sample</strong> - three paragraphs of your own writing, handed over with "match this register". Without it you get the corporate default: utilise, leverage, facilitate, commencement. (b3)</li>
+          <li><strong>Structure</strong> - the shape decided before the drafting. Without it you get one undifferentiated wall, and the rhythm dies. (b5)</li>
+          <li><strong>Specifics</strong> - the real numbers, names and dates. Without them a model writes plausible vagueness, which is its single most dangerous output. (b2, b5)</li>
+          <li><strong>Cut</strong> - deleting the closing paragraph that restates the opening, and every hedge you would not say out loud. The biggest single jump on the ladder. (b7)</li>
+        </ul>
+        <p>There is a sixth toggle in the lab: <strong>"sound more professional"</strong>. It is not a lever. Press it on a finished draft and it costs you <strong>36 points</strong> - we will come back to why that is the most requested edit in the world.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>When to skip the model entirely<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The loop has a branch at step 3 that people rarely take. Skip AI drafting when:</p>
+        <ul>
+          <li><strong>The piece is three sentences long.</strong> Briefing a model properly takes longer than writing it. Anything you can say in a breath, say in a breath.</li>
+          <li><strong>The writing IS the thinking.</strong> If you do not yet know what you believe, drafting is how you find out, and outsourcing it means you arrive at the model's position instead of your own.</li>
+          <li><strong>The relationship is the content.</strong> Condolence, apology, praise, hard feedback. b8 goes at this properly - the risk is not a bad draft, it is that the reader can tell, and what they learn is that you did not spend yourself on it.</li>
+          <li><strong>You cannot check the facts it would need.</strong> A model will fill a gap with something plausible, and plausible is worse than blank because it survives review.</li>
+        </ul>
+        <p>Skipping the tool is a competent choice, not a purist one. The people who get the most from AI writing are the ones with a clear rule for when not to use it.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: FLUENT IS NOT USEFUL ============ -->
+  <section class="section" id="fluent">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the central idea</span>
+      <h2>Fluent is not the same as useful <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">We were all trained to spot bad writing that <em>looks</em> bad - typos, tangles, clumsy sentences. AI has made that category almost extinct and replaced it with something harder to catch: prose that is smooth, grammatical, warm in tone and carries <strong>no information</strong>. Nobody flags it in review, because there is nothing to point at. The scorecard in tonight's lab exists to give you something to point at.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two axes of writing quality: fluency and substance. AI drafts default to fluent but empty, which review processes rarely catch.">
+        <style>
+          .fqA { font: 700 12px Inter, sans-serif; fill: #6B7480; }
+          .fqH { font: 700 13.5px Inter, sans-serif; fill: #FFFFFF; }
+          .fqS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .93; }
+          .fqI { font: 700 13.5px Inter, sans-serif; fill: #24282E; }
+          .fqX { font: 400 11.5px Inter, sans-serif; fill: #6B7480; }
+          .fqN { font: 600 13px Inter, sans-serif; fill: #101A24; }
+        </style>
+        <text class="fqA" x="40" y="30">SUBSTANCE - does it say something checkable?</text>
+        <text class="fqA" x="40" y="366">FLUENCY - does it read well? →</text>
+
+        <rect x="40" y="46" width="380" height="130" rx="10" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="fqI" x="58" y="74">Clumsy but substantial</text>
+        <text class="fqX" x="58" y="96">Real numbers, real ask, awkward sentences.</text>
+        <text class="fqX" x="58" y="116">Reviewers fix it in five minutes because the</text>
+        <text class="fqX" x="58" y="136">thinking is already there.</text>
+        <text class="fqX" x="58" y="162">This was the normal failure before 2023.</text>
+
+        <rect x="440" y="46" width="400" height="130" rx="10" fill="#33475C"/>
+        <text class="fqH" x="458" y="74">Fluent and substantial</text>
+        <text class="fqS" x="458" y="96">The target. Specific, short, sounds like you,</text>
+        <text class="fqS" x="458" y="116">and the reader knows what to do next.</text>
+        <text class="fqS" x="458" y="136">Scores 90 or better on the seven measures.</text>
+        <text class="fqS" x="458" y="162">Reached by direction and cutting, not prompting.</text>
+
+        <rect x="40" y="192" width="380" height="130" rx="10" fill="#FFFFFF" stroke="#CBD1D8" stroke-width="1.5"/>
+        <text class="fqI" x="58" y="220">Clumsy and empty</text>
+        <text class="fqX" x="58" y="242">Rare now, and honestly the least dangerous:</text>
+        <text class="fqX" x="58" y="262">everyone can see it is not finished, so it</text>
+        <text class="fqX" x="58" y="282">gets sent back before it does harm.</text>
+
+        <rect x="440" y="192" width="400" height="130" rx="10" fill="#B04A2F"/>
+        <text class="fqH" x="458" y="220">Fluent and empty - the new default</text>
+        <text class="fqS" x="458" y="242">Warm, grammatical, 200 words, nothing to act on.</text>
+        <text class="fqS" x="458" y="262">Passes review because there is no error to name.</text>
+        <text class="fqS" x="458" y="282">Costs the reader time and costs you credibility</text>
+        <text class="fqS" x="458" y="302">slowly, which is why nobody stops it.</text>
+
+        <rect x="40" y="340" width="14" height="14" rx="3" fill="#33475C"/>
+        <text class="fqN" x="64" y="352">Your job moved: from making prose readable to making it say something. Cutting does most of that.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the quadrant AI drafts land in, and why review misses it</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The seven measures, and why these seven<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Each one catches a habit that fluent-but-empty writing has. None of them requires taste, which is the point - you can run them on your own draft without asking anyone's permission:</p>
+        <ul>
+          <li><strong>Hedges and filler</strong> - just, really, somewhat, arguably, I think, a number of. Each one moves the sentence a little further from a commitment.</li>
+          <li><strong>Passive voice</strong> - "a decision was reached" tells the reader nobody is accountable. Counted here with a be-verb-plus-participle heuristic, so treat it as a flag rather than a census.</li>
+          <li><strong>Rhythm</strong> - the spread of sentence lengths. Human writing varies; generated prose settles into a steady 18-to-22-word hum, and that hum is the most reliable tell there is.</li>
+          <li><strong>Nominalisations</strong> - abstract nouns built from verbs: implementation, utilisation, finalisation. They hide who did what.</li>
+          <li><strong>AI-tell phrases</strong> - delve, leverage, seamless, landscape, it's worth noting, do not hesitate. Not wrong, just fingerprints.</li>
+          <li><strong>Reading grade</strong> - a real Flesch-Kincaid calculation with syllable counting. Work writing above grade 12 is usually not sophisticated, just unedited.</li>
+          <li><strong>Specifics</strong> - the share of sentences carrying a number or a name. This is the one that separates a real update from a warm noise.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the score is not<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Be careful with this tool, in three specific ways:</p>
+        <ul>
+          <li><strong>It is not a style judgement.</strong> Great writing breaks every one of these habits deliberately. A long flat sentence can be a device; a hedge can be honesty; the passive is correct when the actor genuinely does not matter. The score flags patterns, and you decide which ones you meant.</li>
+          <li><strong>It cannot see whether you are right.</strong> A confident, specific, beautifully cut paragraph of nonsense scores extremely well. Accuracy is step 5 of the loop and no measurement replaces it.</li>
+          <li><strong>It is a drafting tool, not a verdict.</strong> Run it on something you are working on, not on the piece you already love. Chasing a number through five revisions produces its own kind of dead prose.</li>
+        </ul>
+        <p>Used properly it does one useful thing: it turns "this feels a bit waffly" into "eleven hedges, no numbers in six sentences, and every sentence the same length". You can act on the second one before breakfast.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Score a real draft, live <span class="tag demo">★ 12 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">Below is a Cadence update as an unbriefed model would write it. Read it first, honestly: it is not embarrassing. It is grammatical, polite and entirely reasonable. It also scores <strong>48 out of 100</strong>, runs to 223 words, and does not tell the reader what to do. Then start turning levers on and watch which of the seven rows moves.</p>
+
+    <div class="steps">
+      <div class="step"><p>All levers off: <strong>48/100, 223 words</strong>. Read the seven rows. Note specifics at zero and eleven hedges - and note that passive voice and rhythm are already fine, which is why nobody catches this draft in review.</p></div>
+      <div class="step"><p>Turn on <strong>Brief</strong>: 52. Small, and instructive - the point moves to the front, but vagueness survives a brief if you did not supply facts.</p></div>
+      <div class="step"><p>Add <strong>Voice sample</strong>: 68. The biggest early jump, because the corporate register was carrying most of the passives and half the tells.</p></div>
+      <div class="step"><p>Add <strong>Structure</strong> (70), then <strong>Specifics</strong> (83). Watch the specifics row climb as numbers and names arrive.</p></div>
+      <div class="step"><p>Add <strong>Cut</strong>: <strong>98</strong>. Half the words of where you started, twice the score. Then press <strong>Sound more professional</strong> and watch 36 points leave.</p></div>
+    </div>
+
+    <div class="wlbox" data-mode="lab" data-levers=""></div>
+
+    <div class="callout tip">
+      <strong>What is written and what is measured</strong>
+      The drafts are written examples - one good version, plus one specific kind of damage for each missing practice. Every number in the scorecard is computed from the text above it: hedge and tell counts against real word lists, passive hits by pattern, sentence-length spread, nominalisation density, a real Flesch-Kincaid grade with syllable counting, and the share of sentences carrying a number or a name. Change one lever and the text and the numbers change together.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>The climb, then your own writing <span class="tag demo">★ 10 min · explore</span></h2>
+    </div>
+    <p class="lede">The whole ladder, computed live: <strong>48 → 52 → 68 → 70 → 83 → 98</strong>, with the word count falling from 223 to 102. That relationship is the whole course in one line - <strong>the score goes up as the words come down</strong>. Then the anti-lever: from 98, "sound more professional" drops you to <strong>62</strong> and adds 42 words, because every substitution it makes is a hedge, a passive or an abstract noun.</p>
+
+    <div class="steps">
+      <div class="step"><p>Read the rungs as sessions: brief (b2), voice (b3), structure (b5), specifics (b2 and b5), cut (b7).</p></div>
+      <div class="step"><p>Note where the money is: <strong>voice +16 and cut +15</strong>. Two habits, half the total climb, and neither is a prompting trick.</p></div>
+      <div class="step"><p>Now the second box. Paste something you actually wrote - an email you sent this week, or a paragraph a model drafted for you. Same seven measures, nothing leaves your browser.</p></div>
+      <div class="step"><p>Read your own hedge list out loud. That is usually the moment this course starts working.</p></div>
+    </div>
+
+    <div class="wlbox" data-mode="ladder"></div>
+
+    <div class="wlbox" data-mode="own"></div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>"Make it more professional" is the most expensive four words in written work.</strong> Watch what the anti-lever actually does: "I need a decision" becomes "it would be appreciated if we could obtain a decision", "runs 6 to 12 months" becomes "is estimated to be in the region of", and a two-sentence ask grows a "furthermore". Every one of those substitutions removes a person from the sentence. What people mean when they ask for professional is usually "make me less exposed" - and the reader pays for that in time and confusion. The professional version of a hard message is short, specific and signed.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 25-35 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the full ladder until you can predict which row moves before you click. Then take a finished draft to 98 and press the anti-lever, so you feel the loss in your own hands.</li>
+      <li>Paste three things you actually wrote this week into the score-your-own box. Record the three numbers. Do not fix anything yet - b7 is where the cutting is taught properly.</li>
+      <li>Take the worst of the three and delete 40% of the words without deleting any information. Score it again and write down what the difference cost you in time.</li>
+      <li>Write your own skip rule: three kinds of writing you will not hand to a model. Bring it to b8, where we test whether it survives a genuinely hard message.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This track teaches the working core of the plain-language and editing tradition, plus the current guidance on disclosing AI-assisted writing, with a live clarity lab on the key pages. Style manuals and certifications stay with their publishers and are linked each session. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The five-step loop and the five levers</span><span class="note">Parts 1-2 · each lever gets its own session from b2 onward</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The seven measures, including a real Flesch-Kincaid grade calculation</span><span class="note">Part 2 + the lab · applied to your own text in the second box</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Plain-language principles - point first, active voice, concrete nouns, short sentences</span><span class="note">Named here as the tradition the measures come from · applied in b4, b5, b7</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">When not to delegate drafting</span><span class="note">Previewed in the skip rule · the hard cases land in b8</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Voice capture and register matching</span><span class="note">Introduced as the highest-value lever · the method is b3</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In the five-step loop, which step is a model genuinely good at?</p>
+      <button class="qopt" type="button">A · Deciding what the message is for - it is good at framing</button>
+      <button class="qopt" type="button">B · Cutting - it is ruthless in a way people find hard</button>
+      <button class="qopt" type="button">C · Drafting - step 3, and only step 3</button>
+      <p class="qwhy">Drafting is the cheap step and the model is excellent at it. Deciding, cutting and owning are where the writing is actually made, and none of them improve with a better prompt. In practice models are notably bad at cutting, because they were trained to be helpful and adding words feels helpful.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · Why does fluent-but-empty writing survive review when clumsy writing does not?</p>
+      <button class="qopt" type="button">A · Because reviewers are too busy to read carefully</button>
+      <button class="qopt" type="button">B · Because there is no error to point at - the failure is an absence, not a mistake</button>
+      <button class="qopt" type="button">C · Because it is usually written by senior people</button>
+      <p class="qwhy">You can circle a tangled sentence. You cannot circle a missing number. That is exactly why the seven measures matter: they convert an absence into something nameable, which is the only form a reviewer can act on.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · From a 98, "sound more professional" drops the score to 62 and adds 42 words. Why?</p>
+      <button class="qopt" type="button">A · Every substitution it makes is a hedge, a passive, or an abstract noun - it removes people from sentences</button>
+      <button class="qopt" type="button">B · The measures penalise formal vocabulary as a matter of style</button>
+      <button class="qopt" type="button">C · Longer documents always score lower</button>
+      <p class="qwhy">Look at the actual swaps: "I need" becomes "it would be appreciated if we could obtain", "runs" becomes "is estimated to be in the region of". Each one adds hedging, passivity or abstraction. Formality is not the problem - evasion wearing formality's clothes is.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Writer session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The loop</b><span>Decide → brief → draft → cut → own. AI helps at step 3 only. Steps 1, 4 and 5 are the job.</span></div>
+      <div class="cheat-item"><b>The five levers</b><span>Brief (b2) · voice sample (b3) · structure (b5) · specifics (b2, b5) · cut (b7).</span></div>
+      <div class="cheat-item"><b>The ladder</b><span>48 → 52 → 68 → 70 → 83 → 98, and 223 words down to 102. The score rises as the words fall.</span></div>
+      <div class="cheat-item"><b>The anti-lever</b><span>"Sound more professional" costs 36 points and adds 42 words. It removes the person from every sentence.</span></div>
+      <div class="cheat-item"><b>The new failure mode</b><span>Fluent and empty. It passes review because an absence is not an error you can circle.</span></div>
+      <div class="cheat-item"><b>Where the money is</b><span>Voice sample +16, cut +15. Half the climb from two habits, neither of them a prompting trick.</span></div>
+      <div class="cheat-item"><b>Skip the model when</b><span>It is three sentences · the writing is the thinking · the relationship is the content · you cannot check the facts.</span></div>
+      <div class="cheat-item"><b>What the score is not</b><span>Not taste, and blind to whether you are right. A specific, well-cut paragraph of nonsense scores 98.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Writer session 1 of 10 · learn-ai-writing-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="b2-the-writing-brief.html">Next: The brief for a piece of writing →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/write-live.js?v=1"></script>
+<script src="../assets/app.js?v=2"></script>
+</body>
+</html>
